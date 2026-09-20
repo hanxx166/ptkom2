@@ -1,0 +1,1802 @@
+<!doctype html>
+<html lang="id" style="">
+  <head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+      rel="stylesheet"
+    />
+    <link href="https://fonts.googleapis.com" rel="preconnect" />
+    <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&amp;display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      @layer base {
+        html,
+        body {
+          margin: 0;
+          padding: 0;
+        }
+        body {
+          overscroll-behavior: none;
+        }
+        main > :first-child {
+          margin-top: 0 !important;
+        }
+        main > :last-child {
+          margin-bottom: 0 !important;
+        }
+      }
+      ::-webkit-scrollbar {
+        display: none;
+      }
+    </style>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              "inverse-primary": "#6bd8cb",
+              "on-secondary-fixed-variant": "#004395",
+              "on-surface-variant": "#3d4947",
+              "on-primary-fixed": "#00201d",
+              "surface-container-lowest": "#ffffff",
+              "on-error": "#ffffff",
+              "on-tertiary-fixed": "#00201d",
+              surface: "#f8fafc",
+              "secondary-container": "#2170e4",
+              "surface-container-highest": "#d8e3fb",
+              "on-primary-container": "#f4fffc",
+              tertiary: "#006860",
+              "on-primary": "#ffffff",
+              "on-tertiary-container": "#f3fffc",
+              "secondary-fixed": "#d8e2ff",
+              "on-secondary-fixed": "#001a42",
+              "primary-container": "#0d9488",
+              "tertiary-fixed-dim": "#80d5cb",
+              "tertiary-container": "#248279",
+              "on-background": "#0f172a",
+              "surface-dim": "#cfdaf2",
+              "primary-fixed-dim": "#6bd8cb",
+              "on-surface": "#0f172a",
+              outline: "#6d7a77",
+              primary: "#0d9488",
+              "primary-dark": "#0f766e",
+              "surface-container-low": "#f0f4f8",
+              "inverse-on-surface": "#ecf1ff",
+              "surface-tint": "#0d9488",
+              background: "#f8fafc",
+              "tertiary-fixed": "#9cf2e8",
+              "outline-variant": "#cbd5e1",
+              "secondary-fixed-dim": "#adc6ff",
+              "surface-container-high": "#e2e8f0",
+              "on-tertiary-fixed-variant": "#00504a",
+              "on-secondary-container": "#fefcff",
+              "on-error-container": "#93000a",
+              error: "#dc2626",
+              "on-tertiary": "#ffffff",
+              "on-secondary": "#ffffff",
+              secondary: "#0284c7",
+              "primary-fixed": "#89f5e7",
+              "error-container": "#fee2e2",
+              "surface-variant": "#e2e8f0",
+              "surface-container": "#eef2f6",
+              "surface-bright": "#ffffff",
+              "inverse-surface": "#1e293b",
+              "on-primary-fixed-variant": "#005049",
+            },
+            borderRadius: {
+              DEFAULT: "0.25rem",
+              lg: "0.5rem",
+              xl: "0.75rem",
+              full: "9999px",
+            },
+            spacing: {
+              gutter: "1.5rem",
+              "margin-sm": "1rem",
+              "space-xl": "2.5rem",
+              "space-lg": "1.5rem",
+              "space-xs": "0.25rem",
+              "gutter-sm": "1rem",
+              margin: "2rem",
+              "space-md": "1rem",
+              "space-sm": "0.5rem",
+            },
+            fontFamily: {
+              "label-md": ["Inter", "sans-serif"],
+              "body-sm": ["Inter", "sans-serif"],
+              "title-lg": ["Inter", "sans-serif"],
+              "body-md": ["Inter", "sans-serif"],
+              "label-sm": ["Inter", "sans-serif"],
+              "headline-xl": ["Inter", "sans-serif"],
+              "headline-md": ["Inter", "sans-serif"],
+              "display-lg-mobile": ["Inter", "sans-serif"],
+              "label-lg": ["Inter", "sans-serif"],
+              "headline-xl-mobile": ["Inter", "sans-serif"],
+              "display-lg": ["Inter", "sans-serif"],
+              "body-lg": ["Inter", "sans-serif"],
+            },
+          },
+        },
+      };
+    </script>
+  </head>
+  <body
+    class="bg-[#f8fafc] font-body-md text-body-md text-on-surface antialiased min-h-screen flex flex-col"
+  >
+    <div
+      class="fixed top-0 left-0 right-0 z-50 flex flex-col shadow-[0_2px_12px_rgba(0,0,0,0.06)]"
+    >
+      <header
+        class="w-full bg-white border-b border-surface-container-high/60 backdrop-blur-xl"
+      >
+        <div
+          class="h-20 max-w-[1280px] mx-auto px-gutter flex items-center justify-between gap-space-md"
+        >
+          <div class="flex items-center gap-space-md">
+            <a
+              class="flex items-center gap-2.5 shrink-0"
+              data-path="beranda"
+              href="#"
+              ><div
+                class="w-10 h-10 rounded-xl bg-gradient-to-br from-[#00685f] to-[#004395] text-white flex items-center justify-center shadow-sm shrink-0"
+              >
+                <span class="material-symbols-outlined text-[24px]"
+                  >local_hospital</span
+                >
+              </div>
+              <div class="flex flex-col leading-tight">
+                <span
+                  class="text-[20px] font-bold text-[#00685f] tracking-tight leading-none"
+                  >SehatPedia</span
+                ><span
+                  class="text-[11px] font-semibold text-[#00685f]/80 leading-tight mt-0.5"
+                  >ITERA Health Center</span
+                >
+              </div></a
+            >
+            <div
+              class="hidden 2xl:flex items-center gap-1.5 px-2.5 py-1 bg-[#89f5e7]/30 border border-surface-container-high text-[#00685f] rounded-full ml-1 shrink-0"
+            >
+              <span
+                class="material-symbols-outlined text-[14px] text-[#00685f]"
+                style="font-variation-settings: &quot;FILL&quot; 1"
+                >verified</span
+              ><span class="text-[11px] font-semibold tracking-normal"
+                >Afiliasi Resmi ITERA</span
+              >
+            </div>
+            <div
+              class="hidden lg:flex items-center bg-surface-container-low rounded-full px-3.5 py-2 border border-outline-variant/40 w-52 xl:w-64 focus-within:border-primary focus-within:bg-white transition-all ml-2"
+            >
+              <span
+                class="material-symbols-outlined text-outline text-[18px] mr-2"
+                >search</span
+              ><input
+                class="bg-transparent border-none text-on-surface placeholder:text-outline/70 font-body-sm text-xs focus:outline-none w-full"
+                placeholder="Cari obat, gejala, atau artikel..."
+                type="text"
+              />
+            </div>
+          </div>
+          <nav
+            class="hidden lg:flex items-center gap-1.5 font-label-lg text-[13px]"
+          >
+            <a
+              aria-current="page"
+              class="px-4 py-2 rounded-full whitespace-nowrap shrink-0 bg-[#00685f] text-white font-semibold shadow-sm transition-all"
+              data-path="beranda"
+              href="#"
+              >Beranda</a
+            ><a
+              class="px-3.5 py-2 rounded-full whitespace-nowrap shrink-0 text-on-surface-variant hover:text-on-surface hover:bg-surface-container-low font-medium transition-all"
+              data-path="ensiklopedia"
+              href="#"
+              >Ensiklopedia</a
+            ><a
+              class="px-3.5 py-2 rounded-full whitespace-nowrap shrink-0 text-on-surface-variant hover:text-on-surface hover:bg-surface-container-low font-medium transition-all"
+              data-path="kalkulator-medis"
+              href="#"
+              >Kalkulator Medis</a
+            ><a
+              class="px-3.5 py-2 rounded-full whitespace-nowrap shrink-0 text-on-surface-variant hover:text-on-surface hover:bg-surface-container-low font-medium transition-all"
+              data-path="tanya-ai"
+              href="#"
+              >Tanya AI</a
+            ><a
+              class="px-3.5 py-2 rounded-full whitespace-nowrap shrink-0 text-on-surface-variant hover:text-on-surface hover:bg-surface-container-low font-medium transition-all"
+              data-path="cek-gejala"
+              href="#"
+              >Cek Gejala</a
+            >
+          </nav>
+          <div class="flex items-center gap-space-sm">
+            <a
+              class="flex items-center gap-1.5 bg-[#ba1a1a] hover:bg-[#a01515] text-white px-3.5 py-2 rounded-full font-label-lg text-xs font-bold transition-all shadow-[0_2px_8px_rgba(186,26,26,0.3)] group"
+              href="tel:119"
+              ><span class="material-symbols-outlined text-[17px] animate-pulse"
+                >crisis_alert</span
+              ><span class="">119 Darurat</span></a
+            >
+            <div
+              class="w-8 h-8 rounded-full bg-[#00685f] text-white flex items-center justify-center cursor-pointer shadow-sm"
+            >
+              <span class="material-symbols-outlined text-[18px]">person</span>
+            </div>
+          </div>
+        </div>
+      </header>
+      <div class="w-full bg-[#dc2626] text-white py-2 px-gutter">
+        <div
+          class="max-w-[1280px] mx-auto flex flex-col sm:flex-row items-center justify-between font-label-md text-xs sm:text-sm gap-2"
+        >
+          <div class="flex items-center gap-2 text-center sm:text-left">
+            <span
+              class="material-symbols-outlined text-[18px] shrink-0 text-white animate-pulse"
+              >crisis_alert</span
+            ><span class=""
+              >Keadaan darurat medis? Hubungi <strong>119</strong> atau segera
+              kunjungi Instalasi Gawat Darurat (IGD) rumah sakit terdekat.</span
+            >
+          </div>
+          <a
+            class="inline-flex items-center gap-1 bg-white/20 hover:bg-white text-white hover:text-[#dc2626] px-3 py-1 rounded-full text-xs font-bold transition-all shrink-0 border border-white/40"
+            href="tel:119"
+            ><span class="">Panggil 119 Bebas Pulsa</span
+            ><span class="material-symbols-outlined text-[14px]"
+              >arrow_forward</span
+            ></a
+          >
+        </div>
+      </div>
+    </div>
+    <main class="w-full pt-32 bg-[#f8fafc] flex-grow">
+      <div class="flex flex-col w-full">
+        <!-- Hero Section with Deep Teal Accent & Dark Screen_12 Style Triage Widget -->
+        <section
+          class="relative overflow-hidden pt-10 pb-16 px-gutter max-w-[1280px] mx-auto w-full"
+        >
+          <!-- Soft Ambient Glow Backgrounds -->
+          <div
+            class="absolute -top-24 left-1/4 w-[500px] h-[500px] bg-teal-200/30 rounded-full blur-3xl pointer-events-none -z-10"
+          ></div>
+          <div
+            class="absolute top-1/3 -right-24 w-[450px] h-[450px] bg-emerald-200/25 rounded-full blur-3xl pointer-events-none -z-10"
+          ></div>
+          <div
+            class="absolute -bottom-20 left-10 w-96 h-96 bg-cyan-100/40 rounded-full blur-3xl pointer-events-none -z-10"
+          ></div>
+          <div
+            class="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-start"
+          >
+            <!-- Left Hero Content -->
+            <div class="lg:col-span-7 flex flex-col pt-2">
+              <div
+                class="inline-flex items-center gap-2 bg-teal-50 border border-teal-200 text-teal-800 px-4 py-1.5 rounded-full w-fit mb-5 shadow-sm"
+              >
+                <span
+                  class="material-symbols-outlined text-[18px] text-teal-600"
+                  style="font-variation-settings: &quot;FILL&quot; 1"
+                  >verified</span
+                >
+                <span
+                  class="font-label-md text-xs sm:text-sm font-semibold tracking-wide"
+                  >Validasi Berbasis Bukti Ilmiah &amp; Pedoman Klinis
+                  ITERA</span
+                >
+              </div>
+              <h1
+                class="font-display-lg text-4xl sm:text-5xl lg:text-[48px] text-slate-900 tracking-tight font-extrabold mb-6 leading-tight"
+              >
+                Panduan Kesehatan
+                <span
+                  class="text-transparent bg-clip-text bg-gradient-to-r from-teal-700 via-emerald-600 to-teal-800"
+                  >Terpercaya</span
+                >
+                dalam
+                <span
+                  class="relative inline-block text-teal-700 after:content-[''] after:absolute after:bottom-1 after:left-0 after:w-full after:h-2 after:bg-teal-200/50 after:-z-10"
+                  >Bahasa Awam</span
+                >.
+              </h1>
+              <p
+                class="font-body-lg text-slate-600 mb-8 max-w-xl leading-relaxed text-base sm:text-lg"
+              >
+                Akses rujukan medis resmi, modul pertolongan pertama (P3K)
+                tanggap darurat, dan alat evaluasi kesehatan mandiri yang
+                divalidasi langsung oleh tim dokter kampus ITERA.
+              </p>
+              <!-- Interactive Search Bar -->
+              <div
+                class="bg-white rounded-2xl p-3 sm:p-4 shadow-xl shadow-slate-200/70 border border-slate-200 mb-6 relative"
+              >
+                <div
+                  class="flex items-center gap-3 bg-slate-50 p-2 sm:p-2.5 rounded-xl border border-slate-200 focus-within:border-teal-500 focus-within:bg-white focus-within:ring-2 focus-within:ring-teal-500/20 transition-all"
+                >
+                  <span
+                    class="material-symbols-outlined text-teal-600 text-[24px] pl-2"
+                    >search</span
+                  >
+                  <input
+                    autocomplete="off"
+                    class="w-full bg-transparent border-none text-slate-900 placeholder:text-slate-400 font-body-md text-sm sm:text-base focus:outline-none px-1"
+                    id="fuzzy-search-input"
+                    placeholder="Cari keluhan, panduan P3K, artikel, atau obat..."
+                    type="text"
+                  />
+                  <button
+                    class="bg-gradient-to-r from-teal-700 to-emerald-700 hover:from-teal-800 hover:to-emerald-800 text-white px-5 sm:px-6 py-2.5 sm:py-3 rounded-lg font-label-lg text-sm font-semibold shadow-md transition-all flex items-center gap-1.5 shrink-0 active:scale-95"
+                  >
+                    <span class="">Cari</span>
+                    <span class="material-symbols-outlined text-[16px]"
+                      >arrow_forward</span
+                    >
+                  </button>
+                </div>
+                <!-- Suggestion Badges -->
+                <div
+                  class="mt-3.5 flex flex-wrap items-center gap-1.5 sm:gap-2"
+                >
+                  <span
+                    class="font-label-sm text-xs text-slate-500 flex items-center gap-1 mr-1 font-semibold"
+                  >
+                    <span
+                      class="material-symbols-outlined text-[14px] text-teal-600"
+                      >trending_up</span
+                    >
+                    Sering Dicari:
+                  </span>
+                  <button
+                    class="font-label-sm text-xs px-3 py-1 bg-slate-100 hover:bg-teal-50 hover:text-teal-800 hover:border-teal-300 text-slate-700 rounded-full transition-colors border border-slate-200"
+                    onclick="setSearch('Luka Bakar')"
+                  >
+                    Luka Bakar
+                  </button>
+                  <button
+                    class="font-label-sm text-xs px-3 py-1 bg-slate-100 hover:bg-teal-50 hover:text-teal-800 hover:border-teal-300 text-slate-700 rounded-full transition-colors border border-slate-200"
+                    onclick="setSearch('Kalkulator BMI')"
+                  >
+                    Kalkulator BMI
+                  </button>
+                  <button
+                    class="font-label-sm text-xs px-3 py-1 bg-slate-100 hover:bg-teal-50 hover:text-teal-800 hover:border-teal-300 text-slate-700 rounded-full transition-colors border border-slate-200"
+                    onclick="setSearch('Pertolongan Tersedak')"
+                  >
+                    Pertolongan Tersedak
+                  </button>
+                  <button
+                    class="font-label-sm text-xs px-3 py-1 bg-slate-100 hover:bg-teal-50 hover:text-teal-800 hover:border-teal-300 text-slate-700 rounded-full transition-colors border border-slate-200"
+                    onclick="setSearch('Penanganan Diare')"
+                  >
+                    Penanganan Diare
+                  </button>
+                </div>
+                <!-- Autocomplete Results Box -->
+                <div
+                  class="hidden absolute left-0 right-0 top-full mt-2 bg-white rounded-2xl shadow-2xl p-3 z-30 border border-slate-200"
+                  id="search-results-box"
+                >
+                  <div
+                    class="p-1 font-label-sm text-xs text-slate-400 font-semibold uppercase tracking-wider"
+                  >
+                    Hasil Tercepat
+                  </div>
+                  <div
+                    class="flex flex-col gap-1"
+                    id="search-result-items"
+                  ></div>
+                </div>
+              </div>
+              <!-- Trust Badges Under Search -->
+              <div
+                class="flex flex-wrap items-center gap-4 sm:gap-6 text-slate-600 text-xs sm:text-sm pt-1"
+              >
+                <div class="flex items-center gap-1.5">
+                  <span
+                    class="material-symbols-outlined text-[19px] text-teal-600"
+                    >verified_user</span
+                  >
+                  <span class="font-medium">Standar Kemenkes RI</span>
+                </div>
+                <div class="w-1.5 h-1.5 rounded-full bg-slate-300"></div>
+                <div class="flex items-center gap-1.5">
+                  <span
+                    class="material-symbols-outlined text-[19px] text-teal-600"
+                    >clinical_notes</span
+                  >
+                  <span class="font-medium">Acuan IDAI &amp; PAPDI</span>
+                </div>
+                <div
+                  class="w-1.5 h-1.5 rounded-full bg-slate-300 hidden sm:block"
+                ></div>
+                <div class="hidden sm:flex items-center gap-1.5">
+                  <span
+                    class="material-symbols-outlined text-[19px] text-teal-600"
+                    >security</span
+                  >
+                  <span class="font-medium">Bebas Bias Komersial</span>
+                </div>
+              </div>
+            </div>
+            <!-- 3. Right Column: DARK / BLACK SCREEN_12 WIDGET (Pusat Bantuan Cepat - Siaga Medis & Tanggap Triase) -->
+            <div class="lg:col-span-5 w-full">
+              <div
+                class="bg-[#090d16] text-white rounded-3xl p-6 sm:p-7 shadow-2xl border border-slate-800 relative overflow-hidden flex flex-col gap-5 ring-1 ring-white/10 shadow-slate-900/60 transition-all"
+              >
+                <!-- Background Neon Blur Glow -->
+                <div
+                  class="absolute -top-16 -right-16 w-48 h-48 bg-teal-500/15 rounded-full blur-3xl pointer-events-none"
+                ></div>
+                <div
+                  class="absolute -bottom-16 -left-16 w-48 h-48 bg-emerald-500/10 rounded-full blur-3xl pointer-events-none"
+                ></div>
+                <!-- Header of Dark Card -->
+                <div
+                  class="flex items-center justify-between pb-3 border-b border-slate-800/80"
+                >
+                  <div class="flex items-center gap-2.5">
+                    <span class="relative flex h-3 w-3">
+                      <span
+                        class="animate-ping absolute inline-flex h-full w-full rounded-full bg-emerald-400 opacity-75"
+                      ></span>
+                      <span
+                        class="relative inline-flex rounded-full h-3 w-3 bg-emerald-400 shadow-[0_0_8px_rgba(52,211,153,0.8)]"
+                      ></span>
+                    </span>
+                    <span
+                      class="font-title-lg text-base sm:text-lg font-bold text-slate-100"
+                      >Pusat Bantuan Cepat</span
+                    >
+                  </div>
+                  <span
+                    class="font-label-sm text-[11px] bg-emerald-950/80 text-emerald-400 border border-emerald-500/30 px-2.5 py-0.5 rounded-full font-bold tracking-wide"
+                  >
+                    Siaga Triase 24/7
+                  </span>
+                </div>
+                <!-- Glowing ECG Pulse Monitor Card inside dark box -->
+                <div
+                  class="bg-slate-900/90 p-4 rounded-2xl border border-slate-800 relative overflow-hidden"
+                >
+                  <div class="flex justify-between items-center mb-2">
+                    <div class="flex items-center gap-2 text-slate-200">
+                      <span
+                        class="material-symbols-outlined text-[18px] text-teal-400"
+                        >ecg_heart</span
+                      >
+                      <span
+                        class="font-label-md text-xs font-semibold tracking-wide uppercase text-slate-300"
+                        >Live Clinical Triase</span
+                      >
+                    </div>
+                    <span
+                      class="font-mono text-xs font-bold text-teal-300 bg-teal-950/70 border border-teal-800/50 px-2 py-0.5 rounded"
+                    >
+                      Latency: &lt;2.4s
+                    </span>
+                  </div>
+                  <!-- Neon Glowing ECG Line -->
+                  <div
+                    class="w-full h-14 flex items-center text-teal-400 relative overflow-hidden rounded-lg bg-slate-950/60 border border-teal-950/60"
+                  >
+                    <style>
+                      @keyframes ecg-dash {
+                        0% {
+                          stroke-dashoffset: 640;
+                        }
+                        100% {
+                          stroke-dashoffset: 0;
+                        }
+                      }
+                      @keyframes ecg-sweep {
+                        0% {
+                          transform: translateX(-100%);
+                          opacity: 0.2;
+                        }
+                        40% {
+                          opacity: 0.8;
+                        }
+                        80% {
+                          opacity: 0.7;
+                        }
+                        100% {
+                          transform: translateX(100%);
+                          opacity: 0.1;
+                        }
+                      }
+                      @keyframes blip-pulse {
+                        0%,
+                        100% {
+                          transform: scale(0.8);
+                          opacity: 0.4;
+                        }
+                        50% {
+                          transform: scale(1.25);
+                          opacity: 1;
+                        }
+                      }
+                    </style>
+                    <div
+                      class="absolute inset-0 pointer-events-none opacity-20"
+                      style="
+                        background-image:
+                          linear-gradient(
+                            to right,
+                            rgba(45, 212, 191, 0.15) 1px,
+                            transparent 1px
+                          ),
+                          linear-gradient(
+                            to bottom,
+                            rgba(45, 212, 191, 0.15) 1px,
+                            transparent 1px
+                          );
+                        background-size: 16px 12px;
+                      "
+                    ></div>
+                    <svg
+                      class="w-full h-full relative z-10 drop-shadow-[0_0_8px_rgba(45,212,191,0.8)]"
+                      fill="none"
+                      preserveAspectRatio="none"
+                      viewBox="0 0 320 50"
+                    >
+                      <path
+                        class="opacity-25"
+                        d="M0,25 L40,25 L50,25 L55,10 L65,42 L72,5 L80,35 L85,25 L120,25 L160,25 L170,25 L175,10 L185,42 L192,5 L200,35 L205,25 L240,25 L280,25 L290,25 L295,10 L305,42 L312,5 L320,25"
+                        stroke="currentColor"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="2"
+                      ></path>
+                      <path
+                        class="opacity-95"
+                        d="M0,25 L40,25 L50,25 L55,10 L65,42 L72,5 L80,35 L85,25 L120,25 L160,25 L170,25 L175,10 L185,42 L192,5 L200,35 L205,25 L240,25 L280,25 L290,25 L295,10 L305,42 L312,5 L320,25"
+                        stroke="#2dd4bf"
+                        stroke-dasharray="140 180"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="2.5"
+                        style="animation: ecg-dash 2.4s linear infinite"
+                      ></path>
+                    </svg>
+                    <div
+                      class="absolute inset-y-0 w-24 bg-gradient-to-r from-transparent via-teal-400/25 to-transparent pointer-events-none z-20"
+                      style="
+                        animation: ecg-sweep 2.4s cubic-bezier(0.4, 0, 0.2, 1)
+                          infinite;
+                      "
+                    ></div>
+                    <div
+                      class="absolute right-3 top-2 flex items-center gap-1.5 z-20 pointer-events-none"
+                    >
+                      <span class="relative flex h-2 w-2"
+                        ><span
+                          class="animate-ping absolute inline-flex h-full w-full rounded-full bg-teal-300 opacity-80"
+                        ></span
+                        ><span
+                          class="relative inline-flex rounded-full h-2 w-2 bg-teal-400 shadow-[0_0_6px_rgba(45,212,191,0.9)]"
+                          style="
+                            animation: blip-pulse 1.2s ease-in-out infinite;
+                          "
+                        ></span></span
+                      ><span
+                        class="font-mono text-[9px] text-teal-300/90 font-bold uppercase tracking-widest"
+                        >72 BPM</span
+                      >
+                    </div>
+                  </div>
+                  <div
+                    class="flex justify-between items-center text-slate-400 font-label-sm text-[11px] mt-2 pt-2 border-t border-slate-800"
+                  >
+                    <span class="flex items-center gap-1.5">
+                      <span
+                        class="w-2 h-2 rounded-full bg-emerald-400 inline-block animate-pulse"
+                      ></span>
+                      Faskes Kampus ITERA: Siap
+                    </span>
+                    <span
+                      class="text-teal-300 font-medium flex items-center gap-1"
+                    >
+                      <span class="material-symbols-outlined text-[14px]"
+                        >satellite_alt</span
+                      >
+                      Tanggap Terpadu
+                    </span>
+                  </div>
+                </div>
+                <!-- Key Metrics Bar in Dark Widget -->
+                <div class="grid grid-cols-3 gap-2 text-center py-1">
+                  <div
+                    class="bg-slate-900/60 p-2.5 rounded-xl border border-slate-800/80"
+                  >
+                    <span
+                      class="block text-[10px] text-slate-400 uppercase font-semibold"
+                      >Waktu Tanggap</span
+                    >
+                    <span class="text-sm font-bold text-teal-300"
+                      >&lt; 3 Detik</span
+                    >
+                  </div>
+                  <div
+                    class="bg-slate-900/60 p-2.5 rounded-xl border border-slate-800/80"
+                  >
+                    <span
+                      class="block text-[10px] text-slate-400 uppercase font-semibold"
+                      >Pedoman Klinis</span
+                    >
+                    <span class="text-sm font-bold text-slate-200"
+                      >Kemenkes</span
+                    >
+                  </div>
+                  <div
+                    class="bg-slate-900/60 p-2.5 rounded-xl border border-slate-800/80"
+                  >
+                    <span
+                      class="block text-[10px] text-slate-400 uppercase font-semibold"
+                      >Akses Publik</span
+                    >
+                    <span class="text-sm font-bold text-emerald-400"
+                      >100% Gratis</span
+                    >
+                  </div>
+                </div>
+                <!-- Dual Urgent Action Buttons -->
+                <div class="flex flex-col gap-2.5">
+                  <a
+                    class="w-full bg-gradient-to-r from-red-600 to-rose-600 hover:from-red-500 hover:to-rose-500 text-white py-3 px-4 rounded-xl font-label-lg text-sm font-bold flex items-center justify-center gap-2 shadow-lg shadow-red-900/40 transition-all active:scale-[0.98]"
+                    href="tel:119"
+                  >
+                    <span class="material-symbols-outlined text-[20px]"
+                      >e911_emergency</span
+                    >
+                    <span class="">Panggilan Darurat Ambulans 119</span>
+                  </a>
+                  <div class="grid grid-cols-2 gap-2.5">
+                    <a
+                      class="bg-slate-900 hover:bg-slate-800 text-slate-200 py-2.5 px-3 rounded-xl font-label-md text-xs font-semibold flex items-center justify-center gap-1.5 transition-all border border-slate-800"
+                      href="tel:07218030188"
+                    >
+                      <span
+                        class="material-symbols-outlined text-[16px] text-teal-400"
+                        >local_hospital</span
+                      >
+                      <span class="">Klinik ITERA</span>
+                    </a>
+                    <a
+                      class="bg-teal-950/80 hover:bg-teal-900 text-teal-200 py-2.5 px-3 rounded-xl font-label-md text-xs font-semibold flex items-center justify-center gap-1.5 transition-all border border-teal-800/50"
+                      data-path="ensiklopedia"
+                      href="#"
+                    >
+                      <span
+                        class="material-symbols-outlined text-[16px] text-teal-400"
+                        >menu_book</span
+                      >
+                      <span class="">Direktori P3K</span>
+                    </a>
+                  </div>
+                </div>
+                <!-- Quick Action Links for First Aid -->
+                <div class="pt-1 flex flex-col gap-2">
+                  <span
+                    class="font-label-sm text-[11px] text-slate-400 font-semibold uppercase tracking-wider"
+                    >Aksi Cepat Panduan P3K Mandiri:</span
+                  >
+                  <div class="grid grid-cols-2 gap-2">
+                    <a
+                      class="flex items-center gap-2 p-2 bg-slate-900/70 hover:bg-slate-800/90 border border-slate-800 rounded-lg text-xs text-slate-300 hover:text-teal-300 transition-all group"
+                      data-path="ensiklopedia"
+                      href="#"
+                    >
+                      <span
+                        class="material-symbols-outlined text-teal-400 text-[16px] group-hover:scale-110 transition-transform"
+                        >medical_services</span
+                      >
+                      <span class="truncate">CPR &amp; BHD Dasar</span>
+                    </a>
+                    <a
+                      class="flex items-center gap-2 p-2 bg-slate-900/70 hover:bg-slate-800/90 border border-slate-800 rounded-lg text-xs text-slate-300 hover:text-teal-300 transition-all group"
+                      data-path="ensiklopedia"
+                      href="#"
+                    >
+                      <span
+                        class="material-symbols-outlined text-teal-400 text-[16px] group-hover:scale-110 transition-transform"
+                        >healing</span
+                      >
+                      <span class="truncate">Luka Pendarahan</span>
+                    </a>
+                    <a
+                      class="flex items-center gap-2 p-2 bg-slate-900/70 hover:bg-slate-800/90 border border-slate-800 rounded-lg text-xs text-slate-300 hover:text-teal-300 transition-all group"
+                      data-path="ensiklopedia"
+                      href="#"
+                    >
+                      <span
+                        class="material-symbols-outlined text-teal-400 text-[16px] group-hover:scale-110 transition-transform"
+                        >water_voc</span
+                      >
+                      <span class="truncate">Tersiram Kimia Lab</span>
+                    </a>
+                    <a
+                      class="flex items-center gap-2 p-2 bg-slate-900/70 hover:bg-slate-800/90 border border-slate-800 rounded-lg text-xs text-slate-300 hover:text-teal-300 transition-all group"
+                      data-path="ensiklopedia"
+                      href="#"
+                    >
+                      <span
+                        class="material-symbols-outlined text-teal-400 text-[16px] group-hover:scale-110 transition-transform"
+                        >air</span
+                      >
+                      <span class="truncate">Asma &amp; Sesak Akut</span>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- 4 Main Pillars Grid -->
+        <section class="py-16 px-gutter max-w-[1280px] mx-auto w-full">
+          <div
+            class="flex flex-col md:flex-row md:items-end justify-between mb-10 gap-4"
+          >
+            <div>
+              <div
+                class="inline-flex items-center gap-1.5 text-teal-700 font-bold text-xs tracking-wider uppercase mb-2"
+              >
+                <span
+                  class="w-2 h-2 rounded-full bg-teal-600 inline-block"
+                ></span>
+                Gerbang Akses Utama
+              </div>
+              <h2
+                class="font-headline-xl text-3xl font-extrabold text-slate-900"
+              >
+                4 Pilar Layanan SehatPedia
+              </h2>
+            </div>
+            <p
+              class="font-body-md text-sm sm:text-base text-slate-500 max-w-md leading-relaxed"
+            >
+              Pilih modul bantuan kesehatan sesuai kebutuhan spesifik Anda
+              dengan verifikasi berbasis bukti klinis.
+            </p>
+          </div>
+          <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+            <!-- Card 1: Ensiklopedia -->
+            <div
+              class="bg-white rounded-3xl p-7 shadow-sm hover:shadow-xl border border-slate-200/80 transition-all duration-300 flex flex-col justify-between group hover:-translate-y-1.5"
+            >
+              <div>
+                <div
+                  class="w-13 h-13 w-fit p-3.5 rounded-2xl bg-teal-50 text-teal-700 flex items-center justify-center mb-6 shadow-sm group-hover:bg-teal-600 group-hover:text-white transition-all"
+                >
+                  <span class="material-symbols-outlined text-[28px]"
+                    >menu_book</span
+                  >
+                </div>
+                <div class="flex items-center gap-2 mb-3">
+                  <span
+                    class="font-label-sm text-[11px] bg-teal-50 text-teal-700 border border-teal-200 px-2.5 py-0.5 rounded-full font-bold"
+                    >Resmi Kemenkes</span
+                  >
+                </div>
+                <h3 class="font-title-lg text-lg font-bold text-slate-900 mb-2">
+                  Ensiklopedia &amp; P3K
+                </h3>
+                <p
+                  class="font-body-sm text-sm text-slate-500 mb-6 leading-relaxed"
+                >
+                  Direktori 120+ artikel terverifikasi mengenai penyakit lazim,
+                  panduan gawat darurat mandiri, dan petunjuk obat bebas.
+                </p>
+                <ul class="space-y-2 font-label-md text-xs text-slate-600 mb-6">
+                  <li class="flex items-center gap-2">
+                    <span
+                      class="material-symbols-outlined text-teal-600 text-[17px]"
+                      >check_circle</span
+                    >Prosedur Tanggap Darurat
+                  </li>
+                  <li class="flex items-center gap-2">
+                    <span
+                      class="material-symbols-outlined text-teal-600 text-[17px]"
+                      >check_circle</span
+                    >Daftar Obat Generik &amp; Efek
+                  </li>
+                </ul>
+              </div>
+              <a
+                class="w-full py-3 px-4 bg-slate-100 hover:bg-teal-700 hover:text-white text-teal-800 font-label-lg text-sm font-semibold rounded-xl text-center transition-all flex items-center justify-center gap-2"
+                data-path="ensiklopedia"
+                href="#"
+              >
+                <span class="">Buka Ensiklopedia</span>
+                <span class="material-symbols-outlined text-[17px]"
+                  >arrow_forward</span
+                >
+              </a>
+            </div>
+            <!-- Card 2: Kalkulator Medis -->
+            <div
+              class="bg-white rounded-3xl p-7 shadow-sm hover:shadow-xl border border-slate-200/80 transition-all duration-300 flex flex-col justify-between group hover:-translate-y-1.5"
+            >
+              <div>
+                <div
+                  class="w-fit p-3.5 rounded-2xl bg-sky-50 text-sky-600 flex items-center justify-center mb-6 shadow-sm group-hover:bg-sky-600 group-hover:text-white transition-all"
+                >
+                  <span class="material-symbols-outlined text-[28px]"
+                    >calculate</span
+                  >
+                </div>
+                <div class="flex items-center gap-2 mb-3">
+                  <span
+                    class="font-label-sm text-[11px] bg-sky-50 text-sky-700 border border-sky-200 font-bold px-2.5 py-0.5 rounded-full"
+                    >Standar WHO &amp; Asia</span
+                  >
+                </div>
+                <h3 class="font-title-lg text-lg font-bold text-slate-900 mb-2">
+                  Kalkulator Medis
+                </h3>
+                <p
+                  class="font-body-sm text-sm text-slate-500 mb-6 leading-relaxed"
+                >
+                  Hitung BMI cut-off Asia-Pasifik, taksiran laju hidrasi harian,
+                  dan estimasi dosis parasetamol anak presisi formula teruji.
+                </p>
+                <ul class="space-y-2 font-label-md text-xs text-slate-600 mb-6">
+                  <li class="flex items-center gap-2">
+                    <span
+                      class="material-symbols-outlined text-sky-600 text-[17px]"
+                      >check_circle</span
+                    >BMI Cut-off Asia Pasifik
+                  </li>
+                  <li class="flex items-center gap-2">
+                    <span
+                      class="material-symbols-outlined text-sky-600 text-[17px]"
+                      >check_circle</span
+                    >Kebutuhan Cairan Tubuh
+                  </li>
+                </ul>
+              </div>
+              <a
+                class="w-full py-3 px-4 bg-slate-100 hover:bg-sky-600 hover:text-white text-sky-700 font-label-lg text-sm font-semibold rounded-xl text-center transition-all flex items-center justify-center gap-2"
+                data-path="kalkulator-medis"
+                href="#"
+              >
+                <span class="">Buka Kalkulator</span>
+                <span class="material-symbols-outlined text-[17px]"
+                  >arrow_forward</span
+                >
+              </a>
+            </div>
+            <!-- Card 3: Tanya AI -->
+            <div
+              class="bg-white rounded-3xl p-7 shadow-sm hover:shadow-xl border border-slate-200/80 transition-all duration-300 flex flex-col justify-between group hover:-translate-y-1.5"
+            >
+              <div>
+                <div
+                  class="w-fit p-3.5 rounded-2xl bg-emerald-50 text-emerald-700 flex items-center justify-center mb-6 shadow-sm group-hover:bg-emerald-600 group-hover:text-white transition-all"
+                >
+                  <span class="material-symbols-outlined text-[28px]"
+                    >smart_toy</span
+                  >
+                </div>
+                <div class="flex items-center gap-2 mb-3">
+                  <span
+                    class="font-label-sm text-[11px] bg-emerald-50 text-emerald-800 border border-emerald-200 font-bold px-2.5 py-0.5 rounded-full"
+                    >Guardrail Medis</span
+                  >
+                </div>
+                <h3 class="font-title-lg text-lg font-bold text-slate-900 mb-2">
+                  TanyaSehat AI
+                </h3>
+                <p
+                  class="font-body-sm text-sm text-slate-500 mb-6 leading-relaxed"
+                >
+                  Asisten konsultasi edukatif terlindung guardrail medis.
+                  Mencegah halusinasi klinis dan menolak diagnosis berbahaya.
+                </p>
+                <ul class="space-y-2 font-label-md text-xs text-slate-600 mb-6">
+                  <li class="flex items-center gap-2">
+                    <span
+                      class="material-symbols-outlined text-emerald-600 text-[17px]"
+                      >check_circle</span
+                    >Jawaban Bahasa Sederhana
+                  </li>
+                  <li class="flex items-center gap-2">
+                    <span
+                      class="material-symbols-outlined text-emerald-600 text-[17px]"
+                      >check_circle</span
+                    >Deteksi Kata Kunci Bahaya
+                  </li>
+                </ul>
+              </div>
+              <a
+                class="w-full py-3 px-4 bg-slate-100 hover:bg-emerald-700 hover:text-white text-emerald-800 font-label-lg text-sm font-semibold rounded-xl text-center transition-all flex items-center justify-center gap-2"
+                data-path="tanya-ai"
+                href="#"
+              >
+                <span class="">Tanya Asisten AI</span>
+                <span class="material-symbols-outlined text-[17px]"
+                  >arrow_forward</span
+                >
+              </a>
+            </div>
+            <!-- Card 4: Cek Gejala Wizard -->
+            <div
+              class="bg-white rounded-3xl p-7 shadow-sm hover:shadow-xl border border-slate-200/80 transition-all duration-300 flex flex-col justify-between group hover:-translate-y-1.5"
+            >
+              <div>
+                <div
+                  class="w-fit p-3.5 rounded-2xl bg-teal-50 text-teal-700 flex items-center justify-center mb-6 shadow-sm group-hover:bg-teal-700 group-hover:text-white transition-all"
+                >
+                  <span class="material-symbols-outlined text-[28px]"
+                    >stethoscope</span
+                  >
+                </div>
+                <div class="flex items-center gap-2 mb-3">
+                  <span
+                    class="font-label-sm text-[11px] bg-slate-100 text-slate-700 border border-slate-200 font-bold px-2.5 py-0.5 rounded-full"
+                    >Triage Bertingkat</span
+                  >
+                </div>
+                <h3 class="font-title-lg text-lg font-bold text-slate-900 mb-2">
+                  Cek Gejala Wizard
+                </h3>
+                <p
+                  class="font-body-sm text-sm text-slate-500 mb-6 leading-relaxed"
+                >
+                  Evaluasi runtut gejala tubuh untuk mendapatkan panduan langkah
+                  perawatan mandiri atau urgensi rujukan faskes.
+                </p>
+                <ul class="space-y-2 font-label-md text-xs text-slate-600 mb-6">
+                  <li class="flex items-center gap-2">
+                    <span
+                      class="material-symbols-outlined text-teal-600 text-[17px]"
+                      >check_circle</span
+                    >Deteksi Red-Flag Mandiri
+                  </li>
+                  <li class="flex items-center gap-2">
+                    <span
+                      class="material-symbols-outlined text-teal-600 text-[17px]"
+                      >check_circle</span
+                    >Rekomendasi Tingkat Faskes
+                  </li>
+                </ul>
+              </div>
+              <a
+                class="w-full py-3 px-4 bg-slate-100 hover:bg-teal-700 hover:text-white text-slate-800 font-label-lg text-sm font-semibold rounded-xl text-center transition-all flex items-center justify-center gap-2"
+                data-path="cek-gejala"
+                href="#"
+              >
+                <span class="">Mulai Cek Gejala</span>
+                <span class="material-symbols-outlined text-[17px]"
+                  >arrow_forward</span
+                >
+              </a>
+            </div>
+          </div>
+        </section>
+        <!-- Interactive Quick BMI Utility -->
+        <section class="py-12 px-gutter max-w-[1280px] mx-auto w-full">
+          <div
+            class="bg-gradient-to-br from-white via-slate-50 to-teal-50/40 p-8 md:p-10 rounded-3xl flex flex-col lg:flex-row items-center justify-between gap-8 border border-slate-200 shadow-md relative overflow-hidden"
+          >
+            <div
+              class="absolute -right-16 -top-16 w-64 h-64 bg-teal-200/20 rounded-full blur-2xl pointer-events-none"
+            ></div>
+            <div class="max-w-xl relative z-10">
+              <div
+                class="inline-flex items-center gap-1.5 bg-sky-50 text-sky-700 border border-sky-200 px-3 py-1 rounded-full text-xs font-bold uppercase tracking-wider mb-2"
+              >
+                <span class="material-symbols-outlined text-[14px]">speed</span>
+                Akses Cepat Pengukuran Klinis
+              </div>
+              <h3
+                class="font-headline-md text-2xl font-bold text-slate-900 mt-1"
+              >
+                Ukur Indeks Massa Tubuh (BMI) Anda Sekarang
+              </h3>
+              <p
+                class="font-body-sm text-sm text-slate-600 mt-2 leading-relaxed"
+              >
+                Gunakan parameter klinis Asia-Pasifik (WPRO) untuk mengetahui
+                apakah berat badan Anda berada di rentang ideal atau berisiko
+                penyakit kardiovaskular.
+              </p>
+              <div
+                class="flex flex-wrap items-center gap-4 mt-4 pt-3 border-t border-slate-200 text-xs text-slate-500"
+              >
+                <span class="flex items-center gap-1.5"
+                  ><span class="w-2.5 h-2.5 rounded-full bg-blue-400"></span>
+                  &lt;18.5 Kurang</span
+                >
+                <span class="flex items-center gap-1.5"
+                  ><span class="w-2.5 h-2.5 rounded-full bg-emerald-500"></span>
+                  18.5-22.9 Ideal</span
+                >
+                <span class="flex items-center gap-1.5"
+                  ><span class="w-2.5 h-2.5 rounded-full bg-amber-500"></span>
+                  23-24.9 Waspada</span
+                >
+                <span class="flex items-center gap-1.5"
+                  ><span class="w-2.5 h-2.5 rounded-full bg-rose-500"></span>
+                  ≥25 Obesitas</span
+                >
+              </div>
+            </div>
+            <div
+              class="bg-white p-5 sm:p-6 rounded-2xl shadow-lg w-full lg:w-auto flex flex-col sm:flex-row items-center gap-4 border border-slate-200 relative z-10"
+            >
+              <div class="flex flex-col w-full sm:w-28">
+                <label
+                  class="font-label-sm text-xs text-slate-500 font-medium mb-1"
+                  >Tinggi (cm)</label
+                >
+                <input
+                  class="bg-slate-50 rounded-xl p-2.5 text-slate-900 font-semibold text-center focus:outline-none border border-slate-200 focus:border-teal-500 transition-colors text-base"
+                  id="quick-height"
+                  type="number"
+                  value="168"
+                />
+              </div>
+              <div class="flex flex-col w-full sm:w-28">
+                <label
+                  class="font-label-sm text-xs text-slate-500 font-medium mb-1"
+                  >Berat (kg)</label
+                >
+                <input
+                  class="bg-slate-50 rounded-xl p-2.5 text-slate-900 font-semibold text-center focus:outline-none border border-slate-200 focus:border-teal-500 transition-colors text-base"
+                  id="quick-weight"
+                  type="number"
+                  value="62"
+                />
+              </div>
+              <button
+                class="w-full sm:w-auto mt-2 sm:mt-0 bg-teal-700 hover:bg-teal-800 text-white px-5 py-3 rounded-xl font-label-lg text-sm font-bold shadow-sm transition-all shrink-0 active:scale-95 flex items-center justify-center gap-1.5"
+                onclick="calculateQuickBMI()"
+              >
+                <span class="material-symbols-outlined text-[18px]"
+                  >play_arrow</span
+                >
+                <span class="">Hitung</span>
+              </button>
+              <div
+                class="hidden sm:flex flex-col pl-4 text-left shrink-0 border-l border-slate-200"
+                id="quick-bmi-result"
+              >
+                <span class="font-label-sm text-xs text-slate-500"
+                  >Skor BMI Anda</span
+                >
+                <span
+                  class="font-headline-md text-2xl font-bold text-teal-700 leading-tight"
+                  id="quick-bmi-score"
+                  >21.9</span
+                >
+                <span
+                  class="font-label-sm text-xs text-emerald-700 bg-emerald-50 px-2 py-0.5 rounded font-bold border border-emerald-200 mt-0.5"
+                  id="quick-bmi-status"
+                  >Normal (Asia)</span
+                >
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- Trending Articles / Editorial Spotlights -->
+        <section class="py-16 px-gutter max-w-[1280px] mx-auto w-full">
+          <div
+            class="flex flex-col sm:flex-row sm:items-center justify-between mb-10 gap-4"
+          >
+            <div>
+              <div
+                class="inline-flex items-center gap-1.5 text-teal-700 font-bold text-xs tracking-wider uppercase mb-2"
+              >
+                <span
+                  class="w-2 h-2 rounded-full bg-teal-600 inline-block"
+                ></span>
+                Edukasi Populer Minggu Ini
+              </div>
+              <h2
+                class="font-headline-xl text-3xl font-extrabold text-slate-900"
+              >
+                Sorotan Artikel &amp; Panduan Pilihan
+              </h2>
+            </div>
+            <a
+              class="font-label-lg text-sm text-teal-700 hover:text-teal-900 flex items-center gap-2 font-semibold bg-white px-4 py-2 rounded-xl shadow-sm border border-slate-200 hover:border-teal-300 transition-all"
+              data-path="ensiklopedia"
+              href="#"
+            >
+              <span class="">Lihat Seluruh Direktori Ensiklopedia</span>
+              <span class="material-symbols-outlined text-[17px]">east</span>
+            </a>
+          </div>
+          <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <!-- Article 1 -->
+            <article
+              class="bg-white rounded-3xl overflow-hidden shadow-sm hover:shadow-xl border border-slate-200 transition-all duration-300 flex flex-col group hover:-translate-y-1"
+            >
+              <div class="relative h-52 w-full overflow-hidden">
+                <img
+                  alt="First aid burn treatment under clean cool running water"
+                  class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
+                  data-alt="A sterile clinical first aid scene showing cool tap water gently soothing a minor burn on a patient's arm, illuminated with bright hygienic daylight, captured with soft teal and clean white medical studio colors."
+                  src="https://lh3.googleusercontent.com/aida-public/AB6AXuB_oiTFnxhO1AKz8cdwUyUpgoXF3nOe6kqA_TUodKpuRh7rXa4lSKmTef73Y-CsV9NBfBuXquLAXqSIM_sPPHC9sXZe8oNiYv7-NQ1TfZSbnIawGLbvI3EQ9dSNV-aUVwPAgbS5WMHNZmVv4ESkhz6Z2c7zLbm0Av3n3zZn1ozqoE4YR7DOGu8BNNLeKwUUC8xUdbZ5mGt99fcC0bZYcQp9FzwFqGytDKnBCDTXEYFeYTcLbDvW0V6PNA"
+                />
+                <div
+                  class="absolute inset-0 bg-gradient-to-t from-black/40 via-transparent to-transparent opacity-60"
+                ></div>
+                <span
+                  class="absolute top-3.5 left-3.5 bg-white/95 backdrop-blur-md text-red-600 font-label-sm text-xs font-bold px-3 py-1 rounded-full flex items-center gap-1.5 shadow-sm border border-red-100"
+                >
+                  <span class="material-symbols-outlined text-[14px]"
+                    >warning</span
+                  >
+                  Klarifikasi Mitos
+                </span>
+              </div>
+              <div class="p-6 flex flex-col flex-1 justify-between">
+                <div>
+                  <div
+                    class="flex items-center gap-2 text-slate-500 font-label-sm text-xs mb-3"
+                  >
+                    <span
+                      class="material-symbols-outlined text-[15px] text-teal-600"
+                      >schedule</span
+                    >
+                    <span class="">4 menit baca</span>
+                    <span class="">•</span>
+                    <span
+                      class="text-teal-700 font-semibold bg-teal-50 px-2 py-0.5 rounded"
+                      >Validasi Dokter Kampus</span
+                    >
+                  </div>
+                  <h3
+                    class="font-title-lg text-lg font-bold text-slate-900 mb-2 hover:text-teal-700 transition-colors cursor-pointer leading-snug"
+                  >
+                    Mitos vs Fakta: Bahaya Pasta Gigi &amp; Tepung pada
+                    Penanganan Luka Bakar
+                  </h3>
+                  <p
+                    class="font-body-sm text-sm text-slate-500 line-clamp-2 mb-6 leading-relaxed"
+                  >
+                    Mengapa mengoleskan odol justru memerangkap panas dan
+                    meningkatkan risiko infeksi sekunder? Pelajari SOP
+                    pendinginan air mengalir yang tepat.
+                  </p>
+                </div>
+                <div
+                  class="pt-4 flex items-center justify-between border-t border-slate-100"
+                >
+                  <span class="font-label-sm text-xs text-slate-500 font-medium"
+                    >Topik: Pertolongan Pertama</span
+                  >
+                  <a
+                    class="font-label-md text-sm text-teal-700 font-bold flex items-center gap-1 hover:translate-x-1 transition-transform"
+                    data-path="ensiklopedia"
+                    href="#"
+                  >
+                    Baca
+                    <span class="material-symbols-outlined text-[16px]"
+                      >arrow_forward</span
+                    >
+                  </a>
+                </div>
+              </div>
+            </article>
+            <!-- Article 2 -->
+            <article
+              class="bg-white rounded-3xl overflow-hidden shadow-sm hover:shadow-xl border border-slate-200 transition-all duration-300 flex flex-col group hover:-translate-y-1"
+            >
+              <div class="relative h-52 w-full overflow-hidden">
+                <img
+                  alt="Doctor consultation desk with clinical weight and nutrition charts"
+                  class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
+                  data-alt="A modern medical diagnostic desk featuring a measuring tape, clinical scale indicators, and balanced nutritional charts in a bright contemporary doctor consultation office with clean teal accents."
+                  src="https://lh3.googleusercontent.com/aida-public/AB6AXuBbR-L9p2mdjmFLHaYPlgU1Vii-IY4Y5QovNNit2kzniUOgB-mey3JW20EUrXMN46mx2Mom6rbGrWl0033OCDIOMburC_9Jv8mT-HNaJ1epZfvHI9IZotggiutcCpO9bWtaZ_qjZAucKkeEGKCC5yveKNfTSiBmAGK49VGSF5EZ653va3Mhn8LbCnYGebIHywqk-9wfyGrjGVYkzMQW7q0D2rw8v3OnVGU78watBvt8A7_iZdztu8oHOA"
+                />
+                <div
+                  class="absolute inset-0 bg-gradient-to-t from-black/40 via-transparent to-transparent opacity-60"
+                ></div>
+                <span
+                  class="absolute top-3.5 left-3.5 bg-white/95 backdrop-blur-md text-sky-700 font-label-sm text-xs font-bold px-3 py-1 rounded-full flex items-center gap-1.5 shadow-sm border border-sky-100"
+                >
+                  <span class="material-symbols-outlined text-[14px]"
+                    >science</span
+                  >
+                  Panduan Klinis
+                </span>
+              </div>
+              <div class="p-6 flex flex-col flex-1 justify-between">
+                <div>
+                  <div
+                    class="flex items-center gap-2 text-slate-500 font-label-sm text-xs mb-3"
+                  >
+                    <span
+                      class="material-symbols-outlined text-[15px] text-teal-600"
+                      >schedule</span
+                    >
+                    <span class="">6 menit baca</span>
+                    <span class="">•</span>
+                    <span
+                      class="text-teal-700 font-semibold bg-teal-50 px-2 py-0.5 rounded"
+                      >Panduan WHO WPRO</span
+                    >
+                  </div>
+                  <h3
+                    class="font-title-lg text-lg font-bold text-slate-900 mb-2 hover:text-teal-700 transition-colors cursor-pointer leading-snug"
+                  >
+                    Mengenal Ambang Batas BMI Asia-Pasifik: Mengapa Berbeda dari
+                    Standar Barat?
+                  </h3>
+                  <p
+                    class="font-body-sm text-sm text-slate-500 line-clamp-2 mb-6 leading-relaxed"
+                  >
+                    Populasi Asia memiliki persentase lemak tubuh lebih tinggi
+                    pada nilai BMI lebih rendah. Ketahui titik kritis cutoff
+                    23.0 dan 25.0 kg/m².
+                  </p>
+                </div>
+                <div
+                  class="pt-4 flex items-center justify-between border-t border-slate-100"
+                >
+                  <span class="font-label-sm text-xs text-slate-500 font-medium"
+                    >Topik: Metabolik &amp; Gizi</span
+                  >
+                  <a
+                    class="font-label-md text-sm text-teal-700 font-bold flex items-center gap-1 hover:translate-x-1 transition-transform"
+                    data-path="ensiklopedia"
+                    href="#"
+                  >
+                    Baca
+                    <span class="material-symbols-outlined text-[16px]"
+                      >arrow_forward</span
+                    >
+                  </a>
+                </div>
+              </div>
+            </article>
+            <!-- Article 3 -->
+            <article
+              class="bg-white rounded-3xl overflow-hidden shadow-sm hover:shadow-xl border border-slate-200 transition-all duration-300 flex flex-col group hover:-translate-y-1"
+            >
+              <div class="relative h-52 w-full overflow-hidden">
+                <img
+                  alt="Healthy student meal with fresh veggies and boiled eggs in dorm"
+                  class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
+                  data-alt="A vibrant fresh meal prep bowl with fresh vegetables, boiled eggs, and grains placed beside study notebooks in a sunlit university dorm room, promoting healthy student nutrition."
+                  src="https://lh3.googleusercontent.com/aida-public/AB6AXuDnrTyIxk3i3UMacLRCHDub5xiI6FFt4OWfODwRF74DWWo817_f0R0V_OVgAqZ_eQ30HaXpz2UZfwRZSiQdTcfn5XzdiGHZxoxyBPduY_uA7SLOhzbkBnjlW01ogJIGfWOT19B7AAf2jnqFl65fZAImfCi24tm29S8irX04ybT2HHtIG1CiMui-X5zQDt4foIq2LbF5Qi0V4ejJyg3cI7ygeKTKcKe-PvQyrCBwxuKkv3bG-dS4l3LERg"
+                />
+                <div
+                  class="absolute inset-0 bg-gradient-to-t from-black/40 via-transparent to-transparent opacity-60"
+                ></div>
+                <span
+                  class="absolute top-3.5 left-3.5 bg-white/95 backdrop-blur-md text-emerald-700 font-label-sm text-xs font-bold px-3 py-1 rounded-full flex items-center gap-1.5 shadow-sm border border-emerald-100"
+                >
+                  <span class="material-symbols-outlined text-[14px]">eco</span>
+                  Gaya Hidup Kampus
+                </span>
+              </div>
+              <div class="p-6 flex flex-col flex-1 justify-between">
+                <div>
+                  <div
+                    class="flex items-center gap-2 text-slate-500 font-label-sm text-xs mb-3"
+                  >
+                    <span
+                      class="material-symbols-outlined text-[15px] text-teal-600"
+                      >schedule</span
+                    >
+                    <span class="">5 menit baca</span>
+                    <span class="">•</span>
+                    <span
+                      class="text-teal-700 font-semibold bg-teal-50 px-2 py-0.5 rounded"
+                      >Tinjauan Dietisien</span
+                    >
+                  </div>
+                  <h3
+                    class="font-title-lg text-lg font-bold text-slate-900 mb-2 hover:text-teal-700 transition-colors cursor-pointer leading-snug"
+                  >
+                    Panduan Nutrisi Ekonomis &amp; Mencegah Gastritis Akut Bagi
+                    Mahasiswa
+                  </h3>
+                  <p
+                    class="font-body-sm text-sm text-slate-500 line-clamp-2 mb-6 leading-relaxed"
+                  >
+                    Siasat menjaga lambung tetap sehat di tengah jadwal
+                    praktikum padat dan kebiasaan konsumsi kafein berlebih
+                    selama pekan ujian.
+                  </p>
+                </div>
+                <div
+                  class="pt-4 flex items-center justify-between border-t border-slate-100"
+                >
+                  <span class="font-label-sm text-xs text-slate-500 font-medium"
+                    >Topik: Kesehatan Mahasiswa</span
+                  >
+                  <a
+                    class="font-label-md text-sm text-teal-700 font-bold flex items-center gap-1 hover:translate-x-1 transition-transform"
+                    data-path="ensiklopedia"
+                    href="#"
+                  >
+                    Baca
+                    <span class="material-symbols-outlined text-[16px]"
+                      >arrow_forward</span
+                    >
+                  </a>
+                </div>
+              </div>
+            </article>
+          </div>
+        </section>
+        <!-- Institutional Trust & Validation Metrics -->
+        <section class="py-16 px-gutter max-w-[1280px] mx-auto w-full">
+          <div
+            class="bg-gradient-to-br from-white via-slate-50 to-teal-50/40 rounded-3xl p-8 md:p-12 shadow-md border border-slate-200 relative overflow-hidden"
+          >
+            <div class="text-center max-w-2xl mx-auto mb-12 relative z-10">
+              <div
+                class="inline-flex items-center gap-1.5 bg-teal-50 text-teal-800 border border-teal-200 px-3.5 py-1 rounded-full text-xs font-bold uppercase tracking-wider mb-3"
+              >
+                <span class="material-symbols-outlined text-[16px]"
+                  >verified</span
+                >
+                Komitmen Kualitas &amp; Integritas
+              </div>
+              <h2
+                class="font-headline-xl text-3xl font-bold text-slate-900 mt-1"
+              >
+                Mengapa SehatPedia Dapat Diandalkan?
+              </h2>
+              <p
+                class="font-body-md text-sm sm:text-base text-slate-600 mt-3 leading-relaxed"
+              >
+                Kami menempatkan keselamatan pasien dan ketepatan informasi di
+                atas segalanya, bebas dari kepentingan sponsor maupun iklan
+                farmasi terselubung.
+              </p>
+            </div>
+            <div
+              class="grid grid-cols-2 lg:grid-cols-4 gap-6 text-center relative z-10"
+            >
+              <div
+                class="flex flex-col items-center bg-white p-6 rounded-2xl border border-slate-200 shadow-sm"
+              >
+                <div
+                  class="w-14 h-14 rounded-2xl bg-teal-50 text-teal-700 flex items-center justify-center mb-3"
+                >
+                  <span class="material-symbols-outlined text-[30px]"
+                    >fact_check</span
+                  >
+                </div>
+                <div class="flex flex-col items-center gap-1.5">
+                  <span
+                    class="font-display-lg text-3xl sm:text-4xl font-extrabold text-slate-900 leading-none"
+                    >120+</span
+                  >
+                  <span
+                    class="font-title-lg text-sm sm:text-base font-bold text-slate-800 leading-snug"
+                    >Artikel Terkurasi</span
+                  >
+                  <span
+                    class="font-body-sm text-xs text-slate-500 max-w-[170px] leading-relaxed"
+                    >Disusun sesuai pedoman klinis Kemenkes RI &amp; IDAI</span
+                  >
+                </div>
+              </div>
+              <div
+                class="flex flex-col items-center bg-white p-6 rounded-2xl border border-slate-200 shadow-sm"
+              >
+                <div
+                  class="w-14 h-14 rounded-2xl bg-sky-50 text-sky-600 flex items-center justify-center mb-3"
+                >
+                  <span class="material-symbols-outlined text-[30px]"
+                    >calculate</span
+                  >
+                </div>
+                <div class="flex flex-col items-center gap-1.5">
+                  <span
+                    class="font-display-lg text-3xl sm:text-4xl font-extrabold text-slate-900 leading-none"
+                    >3 Presisi</span
+                  >
+                  <span
+                    class="font-title-lg text-sm sm:text-base font-bold text-slate-800 leading-snug"
+                    >Kalkulator Medis</span
+                  >
+                  <span
+                    class="font-body-sm text-xs text-slate-500 max-w-[170px] leading-relaxed"
+                    >Formula BMI Asia, Hidrasi &amp; Dosis Antipiretik</span
+                  >
+                </div>
+              </div>
+              <div
+                class="flex flex-col items-center bg-white p-6 rounded-2xl border border-slate-200 shadow-sm"
+              >
+                <div
+                  class="w-14 h-14 rounded-2xl bg-emerald-50 text-emerald-700 flex items-center justify-center mb-3"
+                >
+                  <span class="material-symbols-outlined text-[30px]"
+                    >verified</span
+                  >
+                </div>
+                <div class="flex flex-col items-center gap-1.5">
+                  <span
+                    class="font-display-lg text-3xl sm:text-4xl font-extrabold text-slate-900 leading-none"
+                    >100%</span
+                  >
+                  <span
+                    class="font-title-lg text-sm sm:text-base font-bold text-slate-800 leading-snug"
+                    >Bebas Iklan Obat</span
+                  >
+                  <span
+                    class="font-body-sm text-xs text-slate-500 max-w-[170px] leading-relaxed"
+                    >Bebas komersialisasi produk obat tanpa resep</span
+                  >
+                </div>
+              </div>
+              <div
+                class="flex flex-col items-center bg-white p-6 rounded-2xl border border-slate-200 shadow-sm"
+              >
+                <div
+                  class="w-14 h-14 rounded-2xl bg-teal-50 text-teal-700 flex items-center justify-center mb-3"
+                >
+                  <span class="material-symbols-outlined text-[30px]"
+                    >school</span
+                  >
+                </div>
+                <div class="flex flex-col items-center gap-1.5">
+                  <span
+                    class="font-display-lg text-3xl sm:text-4xl font-extrabold text-slate-900 leading-none"
+                    >ITERA</span
+                  >
+                  <span
+                    class="font-title-lg text-sm sm:text-base font-bold text-slate-800 leading-snug"
+                    >Riset Terintegrasi</span
+                  >
+                  <span
+                    class="font-body-sm text-xs text-slate-500 max-w-[170px] leading-relaxed"
+                    >Dikelola langsung oleh Unit Layanan Kesehatan ITERA</span
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+    </main>
+    <!-- Unified Institutional Footer -->
+    <footer class="w-full bg-white border-t border-slate-200 mt-12">
+      <div class="max-w-[1280px] mx-auto px-gutter pt-12 pb-8">
+        <!-- Medical Disclaimer Card -->
+        <div
+          class="p-6 bg-slate-50 rounded-2xl mb-12 flex flex-col md:flex-row items-start md:items-center gap-6 justify-between border border-slate-200"
+        >
+          <div class="flex items-start gap-4">
+            <div
+              class="p-3 bg-teal-50 text-teal-700 rounded-xl flex items-center justify-center shrink-0 border border-teal-200"
+            >
+              <span class="material-symbols-outlined text-[24px]"
+                >verified_user</span
+              >
+            </div>
+            <div>
+              <h4 class="font-title-lg text-base font-bold text-slate-900">
+                Medical Disclaimer (PRD Standar Medis)
+              </h4>
+              <p
+                class="font-body-sm text-xs sm:text-sm text-slate-600 mt-1 max-w-3xl leading-relaxed"
+              >
+                Informasi dalam SehatPedia dipublikasikan untuk literasi edukasi
+                kesehatan civitas akademika ITERA dan masyarakat. Seluruh
+                konten, kalkulator presisi, maupun asisten AI bukan merupakan
+                pengganti diagnosis medis, pemeriksaan fisik, atau saran resep
+                dokter spesialis langsung.
+              </p>
+            </div>
+          </div>
+          <div class="flex flex-col sm:flex-row gap-3 shrink-0">
+            <a
+              class="flex items-center justify-center gap-2 bg-red-600 hover:bg-red-700 text-white px-5 py-2.5 rounded-xl font-label-lg text-xs sm:text-sm font-bold shadow-sm transition-all"
+              href="tel:119"
+            >
+              <span class="material-symbols-outlined text-[18px]">call</span>119
+              Ambulans
+            </a>
+            <a
+              class="flex items-center justify-center gap-2 bg-white hover:bg-slate-100 text-slate-800 px-5 py-2.5 rounded-xl font-label-lg text-xs sm:text-sm font-semibold border border-slate-200 shadow-sm transition-all"
+              href="tel:07218030188"
+            >
+              <span class="material-symbols-outlined text-[18px] text-teal-600"
+                >local_hospital</span
+              >Klinik ITERA
+            </a>
+          </div>
+        </div>
+        <!-- Main Footer Links Grid -->
+        <div class="grid grid-cols-1 md:grid-cols-4 gap-8 mb-10">
+          <div class="md:col-span-1">
+            <div class="flex items-center gap-2.5 mb-3">
+              <img
+                alt="Brand logo SehatPedia"
+                class="h-7 w-auto object-contain"
+                src="https://lh3.googleusercontent.com/aida/AEtjO1XrPpf46kQg_YHxDDVHsnKKVvn0_kKKwki4gTQpWHm77lIc9yPFrF4j6dlLYY17aKbR8zvYj4WNR81VdbInib4wECn5-TKbctH7yhnGRXOdoy4LFO9xbRXYxgZFLDwyiq6uFVuxpcW1HgVigfU3B_w3DlNtqm6lC7HEcnLophqiUlaZuHwC7B4_wPM5oDm-4p3fuFCVDQ_UjgIfPIvHhNJW-UTS8fb7b9T2m6TprqtjbBVyQBxkvpmEnW8"
+              />
+              <span class="font-title-lg text-lg text-teal-800 font-extrabold"
+                >SehatPedia</span
+              >
+            </div>
+            <p class="font-body-sm text-xs text-slate-500 mb-4 leading-relaxed">
+              Portal Literasi Kesehatan Terintegrasi &amp; Alat Bantu Keputusan
+              Mandiri Berbasis Bukti Ilmiah Institut Teknologi Sumatera (ITERA).
+            </p>
+            <div
+              class="flex items-start gap-2 font-label-sm text-xs text-slate-500"
+            >
+              <span
+                class="material-symbols-outlined text-[16px] text-teal-700 shrink-0"
+                >location_on</span
+              >
+              <span class=""
+                >Jl. Terusan Ryacudu, Way Hui, Jati Agung, Lampung</span
+              >
+            </div>
+          </div>
+          <div>
+            <h5
+              class="font-label-lg text-xs font-bold text-slate-900 uppercase tracking-wider mb-4"
+            >
+              Navigasi Interaktif
+            </h5>
+            <ul class="space-y-2 font-body-sm text-xs text-slate-600">
+              <li class="">
+                <a
+                  class="hover:text-teal-700 transition-colors"
+                  data-path="beranda"
+                  href="#"
+                  >Beranda Utama</a
+                >
+              </li>
+              <li class="">
+                <a
+                  class="hover:text-teal-700 transition-colors"
+                  data-path="ensiklopedia"
+                  href="#"
+                  >Ensiklopedia Literasi &amp; P3K</a
+                >
+              </li>
+              <li class="">
+                <a
+                  class="hover:text-teal-700 transition-colors"
+                  data-path="kalkulator-medis"
+                  href="#"
+                  >Kalkulator Presisi Medis</a
+                >
+              </li>
+              <li class="">
+                <a
+                  class="hover:text-teal-700 transition-colors"
+                  data-path="cek-gejala"
+                  href="#"
+                  >Symptom Checker Interaktif</a
+                >
+              </li>
+              <li class="">
+                <a
+                  class="hover:text-teal-700 transition-colors"
+                  data-path="tanya-ai"
+                  href="#"
+                  >TanyaSehat AI Terkontrol</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div>
+            <h5
+              class="font-label-lg text-xs font-bold text-slate-900 uppercase tracking-wider mb-4"
+            >
+              Rujukan &amp; Bantuan
+            </h5>
+            <ul class="space-y-2 font-body-sm text-xs text-slate-600">
+              <li class="">
+                <a class="hover:text-teal-700 transition-colors" href="#"
+                  >Panduan Tanggap Bencana &amp; P3K</a
+                >
+              </li>
+              <li class="">
+                <a class="hover:text-teal-700 transition-colors" href="#"
+                  >Direktori Faskes &amp; RS Terdekat</a
+                >
+              </li>
+              <li class="">
+                <a class="hover:text-teal-700 transition-colors" href="#"
+                  >Konsultasi Tim Medis Kampus</a
+                >
+              </li>
+              <li class="">
+                <a class="hover:text-teal-700 transition-colors" href="#"
+                  >Jadwal Dokter Poliklinik</a
+                >
+              </li>
+              <li class="">
+                <a class="hover:text-teal-700 transition-colors" href="#"
+                  >SOP Rujukan Mahasiswa</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div>
+            <h5
+              class="font-label-lg text-xs font-bold text-slate-900 uppercase tracking-wider mb-4"
+            >
+              Mitra &amp; Sertifikasi
+            </h5>
+            <p class="font-body-sm text-xs text-slate-500 mb-3 leading-relaxed">
+              Dikembangkan di bawah koordinasi Unit Layanan Kesehatan Kampus
+              ITERA berkolaborasi dengan standar Kemenkes RI.
+            </p>
+            <div class="flex flex-wrap gap-2">
+              <span
+                class="bg-slate-100 text-slate-700 font-label-sm text-[11px] px-2.5 py-1 rounded-md border border-slate-200"
+                >Puskesmas Way Hui</span
+              >
+              <span
+                class="bg-slate-100 text-slate-700 font-label-sm text-[11px] px-2.5 py-1 rounded-md border border-slate-200"
+                >RSUD Dr. H. Abdul Moeloek</span
+              >
+              <span
+                class="bg-slate-100 text-slate-700 font-label-sm text-[11px] px-2.5 py-1 rounded-md border border-slate-200"
+                >Kemenkes RI</span
+              >
+            </div>
+          </div>
+        </div>
+        <div
+          class="pt-6 border-t border-slate-100 flex flex-col sm:flex-row items-center justify-between font-label-sm text-xs text-slate-500 gap-3"
+        >
+          <p class="">
+            © 2025 SehatPedia ITERA. Hak Cipta Dilindungi Undang-Undang.
+          </p>
+          <div class="flex gap-4">
+            <a class="hover:text-teal-700 transition-colors" href="#"
+              >Kebijakan Privasi Medis</a
+            >
+            <a class="hover:text-teal-700 transition-colors" href="#"
+              >Syarat Penggunaan</a
+            >
+            <a class="hover:text-teal-700 transition-colors" href="#"
+              >Akurasi Algoritma</a
+            >
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- Interactive Script for Quick Search & BMI Preview -->
+    <script>
+      const sampleKeywords = [
+        {
+          title: "Pertolongan Pertama Luka Bakar Kimia",
+          cat: "Ensiklopedia P3K",
+          link: "ensiklopedia",
+        },
+        {
+          title: "Kalkulator Indeks Massa Tubuh (BMI WPRO)",
+          cat: "Kalkulator Medis",
+          link: "kalkulator-medis",
+        },
+        {
+          title: "Tersedak Pada Dewasa (Heimlich Maneuver)",
+          cat: "Prosedur Gawat Darurat",
+          link: "ensiklopedia",
+        },
+        {
+          title: "Penanganan Diare Akut & Cairan Oralit",
+          cat: "Artikel Klinis",
+          link: "ensiklopedia",
+        },
+        {
+          title: "Tanya Gejala Demam Hari ke-3",
+          cat: "Cek Gejala Wizard",
+          link: "cek-gejala",
+        },
+        {
+          title: "Kalkulator Kebutuhan Hidrasi Harian",
+          cat: "Kalkulator Medis",
+          link: "kalkulator-medis",
+        },
+      ];
+
+      const searchInput = document.getElementById("fuzzy-search-input");
+      const resultsBox = document.getElementById("search-results-box");
+      const resultItems = document.getElementById("search-result-items");
+
+      function setSearch(query) {
+        if (!searchInput) return;
+        searchInput.value = query;
+        handleSearch(query);
+      }
+
+      function handleSearch(query) {
+        if (!query || query.trim().length === 0) {
+          resultsBox.classList.add("hidden");
+          return;
+        }
+
+        const q = query.toLowerCase();
+        const filtered = sampleKeywords.filter(
+          (k) =>
+            k.title.toLowerCase().includes(q) ||
+            k.cat.toLowerCase().includes(q),
+        );
+
+        if (filtered.length > 0) {
+          resultItems.innerHTML = filtered
+            .map(
+              (item) => `
+        <a href="#" data-path="${item.link}" class="flex items-center justify-between p-2 rounded-xl hover:bg-slate-100 transition-colors">
+          <div class="flex items-center gap-2">
+            <span class="material-symbols-outlined text-teal-600 text-[18px]">search</span>
+            <span class="font-body-sm text-sm font-medium text-slate-800">${item.title}</span>
+          </div>
+          <span class="font-label-sm text-[11px] bg-slate-100 text-slate-600 px-2 py-0.5 rounded border border-slate-200">${item.cat}</span>
+        </a>
+      `,
+            )
+            .join("");
+          resultsBox.classList.remove("hidden");
+        } else {
+          resultItems.innerHTML = `
+        <div class="p-3 text-center font-body-sm text-sm text-slate-500">
+          Tidak ditemukan panduan langsung untuk "<strong>${query}</strong>". Coba gunakan istilah umum seperti 'Demam', 'Luka', atau gunakan menu <a href="#" data-path="tanya-ai" class="text-teal-700 font-semibold underline">Tanya AI</a>.
+        </div>
+      `;
+          resultsBox.classList.remove("hidden");
+        }
+      }
+
+      if (searchInput) {
+        searchInput.addEventListener("input", (e) => {
+          handleSearch(e.target.value);
+        });
+
+        document.addEventListener("click", (e) => {
+          if (
+            !searchInput.contains(e.target) &&
+            !resultsBox.contains(e.target)
+          ) {
+            resultsBox.classList.add("hidden");
+          }
+        });
+      }
+
+      function calculateQuickBMI() {
+        const hInput = document.getElementById("quick-height");
+        const wInput = document.getElementById("quick-weight");
+        const resultContainer = document.getElementById("quick-bmi-result");
+        const scoreEl = document.getElementById("quick-bmi-score");
+        const statusEl = document.getElementById("quick-bmi-status");
+
+        const h = parseFloat(hInput.value) / 100;
+        const w = parseFloat(wInput.value);
+
+        if (h > 0 && w > 0) {
+          const bmi = (w / (h * h)).toFixed(1);
+          scoreEl.innerText = bmi;
+
+          let status = "Normal (Asia)";
+          if (bmi < 18.5) status = "Berat Kurang";
+          else if (bmi >= 18.5 && bmi < 23) status = "Normal Ideal";
+          else if (bmi >= 23 && bmi < 25) status = "Kelebihan Berat (At Risk)";
+          else status = "Obesitas (Tingkat 1/2)";
+
+          statusEl.innerText = status;
+          resultContainer.classList.remove("hidden");
+          resultContainer.classList.add("flex");
+        }
+      }
+    </script>
+  </body>
+</html>

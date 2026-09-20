@@ -1,0 +1,358 @@
+﻿<!DOCTYPE html><html lang="id" style=""><head><meta charset="utf-8"><meta content="width=device-width, initial-scale=1.0" name="viewport"><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"><link href="https://fonts.googleapis.com" rel="preconnect"><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script><script id="tailwind-config">tailwind.config = {
+  darkMode: "class",
+  theme: {
+    extend: {
+      "colors": {
+        "primary": "#0d9488",
+        "primary-dark": "#0f766e",
+        "primary-light": "#ccfbf1",
+        "primary-container": "#115e59",
+        "on-primary-container": "#ffffff",
+        "surface": "#f8fafc",
+        "surface-container-lowest": "#ffffff",
+        "surface-container-low": "#f1f5f9",
+        "surface-container": "#e2e8f0",
+        "surface-container-high": "#cbd5e1",
+        "surface-container-highest": "#94a3b8",
+        "on-surface": "#0f172a",
+        "on-surface-variant": "#475569",
+        "outline": "#64748b",
+        "outline-variant": "#e2e8f0",
+        "secondary": "#0284c7",
+        "secondary-fixed": "#e0f2fe",
+        "tertiary": "#059669",
+        "tertiary-fixed": "#d1fae5",
+        "tertiary-fixed-dim": "#a7f3d0",
+        "on-tertiary-fixed-variant": "#065f46",
+        "error": "#dc2626",
+        "error-container": "#fee2e2",
+        "on-error": "#ffffff",
+        "on-error-container": "#991b1b"
+      },
+      "borderRadius": {
+        "DEFAULT": "0.25rem",
+        "lg": "0.5rem",
+        "xl": "0.75rem",
+        "2xl": "1rem",
+        "full": "9999px"
+      },
+      "spacing": {
+        "gutter": "1.5rem",
+        "margin-sm": "1rem",
+        "space-xl": "2.5rem",
+        "space-lg": "1.5rem",
+        "space-xs": "0.25rem",
+        "gutter-sm": "1rem",
+        "margin": "2rem",
+        "space-md": "1rem",
+        "space-sm": "0.5rem"
+      },
+      "fontFamily": {
+        "label-md": ["Inter"],
+        "body-sm": ["Inter"],
+        "title-lg": ["Inter"],
+        "body-md": ["Inter"],
+        "label-sm": ["Inter"],
+        "headline-xl": ["Inter"],
+        "headline-md": ["Inter"],
+        "display-lg-mobile": ["Inter"],
+        "label-lg": ["Inter"],
+        "headline-xl-mobile": ["Inter"],
+        "display-lg": ["Inter"],
+        "body-lg": ["Inter"]
+      },
+      "fontSize": {
+        "label-md": ["12px", {"lineHeight": "16px", "letterSpacing": "0.02em", "fontWeight": "500"}],
+        "body-sm": ["14px", {"lineHeight": "22px", "fontWeight": "400"}],
+        "title-lg": ["18px", {"lineHeight": "26px", "fontWeight": "600"}],
+        "body-md": ["16px", {"lineHeight": "26px", "fontWeight": "400"}],
+        "label-sm": ["11px", {"lineHeight": "14px", "letterSpacing": "0.04em", "fontWeight": "600"}],
+        "headline-xl": ["32px", {"lineHeight": "40px", "letterSpacing": "-0.015em", "fontWeight": "700"}],
+        "headline-md": ["22px", {"lineHeight": "30px", "letterSpacing": "-0.01em", "fontWeight": "600"}],
+        "display-lg-mobile": ["34px", {"lineHeight": "42px", "letterSpacing": "-0.015em", "fontWeight": "700"}],
+        "label-lg": ["14px", {"lineHeight": "20px", "letterSpacing": "0.01em", "fontWeight": "600"}],
+        "headline-xl-mobile": ["26px", {"lineHeight": "34px", "letterSpacing": "-0.01em", "fontWeight": "700"}],
+        "display-lg": ["48px", {"lineHeight": "56px", "letterSpacing": "-0.02em", "fontWeight": "700"}],
+        "body-lg": ["18px", {"lineHeight": "28px", "fontWeight": "400"}]
+      }
+    }
+  }
+}</script></head><body class="bg-surface font-body-md text-body-md text-on-surface antialiased">
+<!-- Sticky Header & Nav Container -->
+<div class="fixed top-0 left-0 right-0 z-50 flex flex-col shadow-[0_2px_12px_rgba(0,0,0,0.06)]">
+<!-- 1. Sticky Main Navbar on Top -->
+<header class="w-full bg-white border-b border-surface-container-high/60 backdrop-blur-xl"><div class="h-20 max-w-[1280px] mx-auto px-gutter flex items-center justify-between gap-space-md"><div class="flex items-center gap-space-md"><a class="flex items-center gap-2.5 shrink-0" data-path="beranda" href="#"><div class="w-10 h-10 rounded-xl bg-gradient-to-br from-[#00685f] to-[#004395] text-white flex items-center justify-center shadow-sm shrink-0"><span class="material-symbols-outlined text-[24px]">local_hospital</span></div><div class="flex flex-col leading-tight"><span class="text-[20px] font-bold text-[#00685f] tracking-tight leading-none">SehatPedia</span><span class="text-[11px] font-semibold text-[#00685f]/80 leading-tight mt-0.5">ITERA Health Center</span></div></a><div class="hidden 2xl:flex items-center gap-1.5 px-2.5 py-1 bg-[#89f5e7]/30 border border-surface-container-high text-[#00685f] rounded-full ml-1 shrink-0"><span class="material-symbols-outlined text-[14px] text-[#00685f]" style="font-variation-settings: &quot;FILL&quot; 1">verified</span><span class="text-[11px] font-semibold tracking-normal">Afiliasi Resmi ITERA</span></div><div class="hidden lg:flex items-center bg-surface-container-low rounded-full px-3.5 py-2 border border-outline-variant/40 w-52 xl:w-64 focus-within:border-primary focus-within:bg-white transition-all ml-2"><span class="material-symbols-outlined text-outline text-[18px] mr-2">search</span><input class="bg-transparent border-none text-on-surface placeholder:text-outline/70 font-body-sm text-xs focus:outline-none w-full" placeholder="Cari obat, gejala, atau artikel..." type="text" /></div></div><nav class="hidden lg:flex items-center gap-1.5 font-label-lg text-[13px]"><a class="px-3.5 py-2 rounded-full whitespace-nowrap shrink-0 text-on-surface-variant hover:text-on-surface hover:bg-surface-container-low font-medium transition-all" data-path="beranda" href="#">Beranda</a><a class="px-3.5 py-2 rounded-full whitespace-nowrap shrink-0 text-on-surface-variant hover:text-on-surface hover:bg-surface-container-low font-medium transition-all" data-path="ensiklopedia" href="#">Ensiklopedia</a><a class="px-3.5 py-2 rounded-full whitespace-nowrap shrink-0 text-on-surface-variant hover:text-on-surface hover:bg-surface-container-low font-medium transition-all" data-path="kalkulator-medis" href="#">Kalkulator Medis</a><a class="px-3.5 py-2 rounded-full whitespace-nowrap shrink-0 text-on-surface-variant hover:text-on-surface hover:bg-surface-container-low font-medium transition-all" data-path="tanya-ai" href="#">Tanya AI</a><a aria-current="page" class="px-4 py-2 rounded-full whitespace-nowrap shrink-0 bg-[#00685f] text-white font-semibold shadow-sm transition-all" data-path="cek-gejala" href="#">Cek Gejala</a></nav><div class="flex items-center gap-space-sm"><a class="flex items-center gap-1.5 bg-[#ba1a1a] hover:bg-[#a01515] text-white px-3.5 py-2 rounded-full font-label-lg text-xs font-bold transition-all shadow-[0_2px_8px_rgba(186,26,26,0.3)] group" href="tel:119"><span class="material-symbols-outlined text-[17px] animate-pulse">crisis_alert</span><span class="">119 Darurat</span></a><div class="w-8 h-8 rounded-full bg-[#00685f] text-white flex items-center justify-center cursor-pointer shadow-sm"><span class="material-symbols-outlined text-[18px]">person</span></div></div></div></header>
+<!-- 2. Medical Emergency Alert Banner (Positioned directly UNDER the navbar) -->
+<div class="w-full bg-[#dc2626] text-white py-2 px-gutter"><div class="max-w-[1280px] mx-auto flex flex-col sm:flex-row items-center justify-between font-label-md text-xs sm:text-sm gap-2"><div class="flex items-center gap-2 text-center sm:text-left"><span class="material-symbols-outlined text-[18px] shrink-0 text-white animate-pulse">crisis_alert</span><span class="">Keadaan darurat medis? Hubungi <strong>119</strong> atau segera kunjungi Instalasi Gawat Darurat (IGD) rumah sakit terdekat.</span></div><a class="inline-flex items-center gap-1 bg-white/20 hover:bg-white text-white hover:text-[#dc2626] px-3 py-1 rounded-full text-xs font-bold transition-all shrink-0 border border-white/40" href="tel:119"><span class="">Panggil 119 Bebas Pulsa</span><span class="material-symbols-outlined text-[14px]">arrow_forward</span></a></div></div>
+</div>
+<!-- Main Page Content (adjusted padding for sticky nav + emergency bar) -->
+<main class="w-full pt-32 md:pt-36 bg-surface min-h-screen">
+<div class="flex flex-col w-full">
+<!-- Ambient Top Background Accent -->
+<div class="relative w-full max-w-[1240px] mx-auto px-4 lg:px-6 overflow-hidden pointer-events-none">
+<div class="absolute -top-24 right-10 w-96 h-96 bg-[#0d9488]/10 rounded-full blur-3xl"></div>
+<div class="absolute top-12 left-1/4 w-72 h-72 bg-emerald-500/10 rounded-full blur-2xl"></div>
+</div>
+<div class="w-full max-w-[1240px] mx-auto px-4 lg:px-6 pb-space-xl">
+<!-- Section Header -->
+<div class="mb-6 flex flex-col md:flex-row md:items-end justify-between gap-4">
+<div>
+<div class="inline-flex items-center gap-1.5 px-3 py-1 bg-teal-50 border border-teal-200/80 text-[#0d9488] rounded-full mb-2">
+<span class="material-symbols-outlined text-[16px]">stethoscope</span>
+<span class="font-label-sm text-label-sm tracking-wider uppercase font-bold">Clinical Protocol Engine v2.4</span>
+</div>
+<h1 class="text-2xl sm:text-3xl lg:text-4xl font-bold text-on-surface tracking-tight">Cek Gejala Mandiri (Symptom Checker)</h1>
+<p class="text-sm sm:text-base text-on-surface-variant max-w-2xl mt-1.5">
+            Skrining awal keluhan kesehatan dengan alur bertahap berbasis decision tree medis teruji untuk civitas akademika dan masyarakat luas.
+          </p>
+</div>
+<!-- Active Algorithm Badge -->
+<div class="flex items-center gap-2 bg-surface-container-lowest border border-outline-variant/60 px-4 py-2 rounded-xl shadow-xs shrink-0 self-start md:self-auto">
+<span class="w-2.5 h-2.5 rounded-full bg-[#059669] animate-pulse"></span>
+<span class="text-xs font-semibold text-on-surface-variant">Algoritma Triase Dispepsia &amp; Abdominal Aktif</span>
+</div>
+</div>
+<!-- Banner Informed Consent / Batasan Klinis -->
+<div class="w-full bg-gradient-to-r from-red-50 via-rose-50 to-amber-50 text-red-950 rounded-2xl p-5 md:p-6 mb-8 border border-red-200 shadow-xs relative overflow-hidden"><div class="absolute -right-6 -bottom-6 w-36 h-36 bg-red-200/40 rounded-full blur-xl pointer-events-none"></div><div class="flex flex-col md:flex-row items-start md:items-center justify-between gap-5 relative z-10"><div class="flex items-start gap-4 flex-1 min-w-0"><div class="w-11 h-11 rounded-xl bg-gradient-to-br from-red-600 to-rose-700 text-white flex items-center justify-center shrink-0 shadow-md"><span class="material-symbols-outlined text-[24px]">warning</span></div><div class="flex-1 min-w-0"><div class="flex flex-wrap items-center gap-2 mb-1"><span class="text-base sm:text-lg font-bold tracking-tight text-red-950">Penting: Informed Consent &amp; Batasan Klinis</span><span class="bg-red-600 text-white px-2.5 py-0.5 rounded-full text-[11px] font-bold uppercase tracking-wider shadow-xs">Protokol Kegawatdaruratan</span></div><p class="text-xs sm:text-sm leading-relaxed text-red-900/90 max-w-3xl">Skrining ini hanya alat bantu edukasi awal, bukan diagnosis klinis dokter. Jika Anda merasakan <strong class="font-bold text-red-950 underline underline-offset-2">nyeri dada menusuk menjalar</strong>, <strong class="font-bold text-red-950">sesak napas berat</strong>, muntah berdarah, atau <strong class="font-bold text-red-950">pingsan</strong>, segera batalkan skrining dan hubungi <strong class="font-bold">119</strong> atau kunjungi IGD terdekat.</p></div></div><div class="shrink-0 w-full md:w-auto"><a class="w-full md:w-auto inline-flex items-center justify-center gap-2 bg-[#dc2626] hover:bg-[#b91c1c] text-white px-5 py-2.5 rounded-xl text-sm font-bold shadow-md transition-all active:scale-95 whitespace-nowrap" href="tel:119"><span class="material-symbols-outlined text-[18px] animate-pulse">crisis_alert</span><span class="">Darurat 119</span></a></div></div></div>
+<!-- Grid Layout: Left Wizard (8 cols) + Right Triage Sidebar (4 cols) -->
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-6 items-start">
+<!-- Wizard Left Panel -->
+<section class="lg:col-span-8 flex flex-col gap-6">
+<div class="bg-surface-container-lowest rounded-2xl p-5 md:p-8 shadow-xs border border-outline-variant/60 relative"><div class="bg-gradient-to-br from-teal-50/70 via-emerald-50/40 to-surface-container-low rounded-2xl p-4 md:p-5 mb-7 border border-teal-100"><div class="flex flex-col sm:flex-row sm:items-center justify-between gap-3 mb-3"><div class="flex items-center gap-3.5"><div class="relative w-11 h-11 shrink-0"><svg class="w-11 h-11 -rotate-90" viewBox="0 0 36 36"><path class="text-teal-100" d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831" fill="none" stroke="currentColor" stroke-width="3.5"></path><path class="text-[#0d9488]" d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831" fill="none" stroke="currentColor" stroke-dasharray="42, 100" stroke-linecap="round" stroke-width="3.5"></path></svg><span class="absolute inset-0 flex items-center justify-center text-xs font-bold text-[#0d9488]">3/7</span></div><div><div class="flex items-center gap-1.5 mb-0.5"><span class="w-2 h-2 rounded-full bg-[#059669] animate-pulse"></span><span class="text-[11px] font-bold uppercase tracking-wider text-[#0d9488]">Modul Skrining Gastrik</span></div><h2 class="text-base sm:text-lg font-bold text-on-surface">Langkah 3 dari 7 (42% Selesai) â€” Karakteristik &amp; Durasi Gejala</h2></div></div><div class="inline-flex items-center gap-1.5 px-3 py-1 bg-white rounded-full shadow-xs border border-teal-200/60 text-on-surface-variant text-xs font-semibold self-start sm:self-auto shrink-0"><span class="material-symbols-outlined text-[15px] text-[#0d9488]">timer</span><span class="">Estimasi: ~2 menit tersisa</span></div></div><div class="w-full bg-teal-100/70 h-2 rounded-full overflow-hidden"><div class="bg-gradient-to-r from-[#0d9488] to-[#059669] h-full w-[42%] rounded-full transition-all duration-500 shadow-xs"></div></div></div><div class="mb-6"><div class="inline-flex items-center gap-1.5 text-[#0d9488] bg-teal-50 px-3 py-0.5 rounded-full text-xs uppercase tracking-wide font-bold mb-2.5 border border-teal-100"><span class="material-symbols-outlined text-[15px]">quiz</span><span class="">Pertanyaan Klinis Utama</span></div><h3 class="text-xl sm:text-2xl text-on-surface font-bold leading-snug tracking-tight">Berapa lama keluhan nyeri ulu hati atau kembung ini telah Anda rasakan, dan kapan biasanya terasa paling memberat?</h3><p class="text-sm text-on-surface-variant mt-2 leading-relaxed">Pilih satu opsi paling relevan dengan kondisi fisik aktual Anda selama 48 jam terakhir untuk menentukan akurasi tatalaksana.</p></div><form class="space-y-3 mb-7" id="symptom-step-form" onsubmit="return false;"><label class="group relative flex items-start gap-3.5 p-4 rounded-2xl bg-teal-50/60 hover:bg-teal-50 border-2 border-[#0d9488] shadow-xs transition-all cursor-pointer"><input checked="" class="mt-1 w-5 h-5 text-[#0d9488] focus:ring-[#0d9488] accent-[#0d9488] cursor-pointer shrink-0" name="duration_characteristic" onchange="updateTriageEstimate('mild')" type="radio" value="mild_acute"><div class="flex-1 min-w-0"><div class="flex flex-wrap items-center justify-between gap-2 mb-1.5"><span class="text-base font-bold text-on-surface group-hover:text-[#0d9488] transition-colors leading-snug">Kurang dari 24 jam, mendadak setelah makan makanan pedas/asam</span><span class="bg-[#d1fae5] text-[#065f46] px-2.5 py-0.5 rounded-full text-xs font-bold shrink-0">Tingkat Urgensi Rendah</span></div><p class="text-xs sm:text-sm text-on-surface-variant leading-relaxed">Sering diasosiasikan dengan iritasi mukosa lambung transien. Dapat ditangani mandiri melalui pola hidrasi dan antasida biasa.</p></div></label><label class="group relative flex items-start gap-3.5 p-4 rounded-2xl bg-surface-container-lowest hover:bg-surface-container-low/70 border border-outline-variant hover:border-[#0d9488]/40 shadow-xs transition-all cursor-pointer"><input class="mt-1 w-5 h-5 text-[#0d9488] focus:ring-[#0d9488] accent-[#0d9488] cursor-pointer shrink-0" name="duration_characteristic" onchange="updateTriageEstimate('moderate')" type="radio" value="subacute_intermittent"><div class="flex-1 min-w-0"><div class="flex flex-wrap items-center justify-between gap-2 mb-1.5"><span class="text-base font-bold text-on-surface group-hover:text-[#0d9488] transition-colors leading-snug">2 hingga 7 hari, hilang timbul terutama saat perut kosong atau sebelum tidur malam</span><span class="bg-sky-100 text-sky-800 px-2.5 py-0.5 rounded-full text-xs font-bold shrink-0">Urgensi Menengah</span></div><p class="text-xs sm:text-sm text-on-surface-variant leading-relaxed">Karakteristik pola refluks asam malam hari (nocturnal acid breakthrough) atau sindrom dispepsia fungsional.</p></div></label><label class="group relative flex items-start gap-3.5 p-4 rounded-2xl bg-surface-container-lowest hover:bg-surface-container-low/70 border border-outline-variant hover:border-[#0d9488]/40 shadow-xs transition-all cursor-pointer"><input class="mt-1 w-5 h-5 text-[#0d9488] focus:ring-[#0d9488] accent-[#0d9488] cursor-pointer shrink-0" name="duration_characteristic" onchange="updateTriageEstimate('attention')" type="radio" value="chronic_persistent"><div class="flex-1 min-w-0"><div class="flex flex-wrap items-center justify-between gap-2 mb-1.5"><span class="text-base font-bold text-on-surface group-hover:text-[#0d9488] transition-colors leading-snug">Lebih dari 2 minggu berturut-turut meski sudah minum antasida</span><span class="bg-slate-100 text-slate-700 px-2.5 py-0.5 rounded-full text-xs font-bold shrink-0">Perlu Evaluasi Dokter</span></div><p class="text-xs sm:text-sm text-on-surface-variant leading-relaxed">Resisten terhadap terapi supresi asam lambung over-the-counter; indikasi penjadwalan konsultasi ke faskes/klinik.</p></div></label><label class="group relative flex items-start gap-3.5 p-4 rounded-2xl bg-red-50/40 hover:bg-red-50/80 border border-red-200 hover:border-red-300 shadow-xs transition-all cursor-pointer"><input class="mt-1 w-5 h-5 accent-red-600 cursor-pointer shrink-0" name="duration_characteristic" onchange="updateTriageEstimate('urgent')" type="radio" value="red_flag_bleeding"><div class="flex-1 min-w-0"><div class="flex flex-wrap items-center justify-between gap-2 mb-1.5"><span class="text-base font-bold text-red-700 leading-snug">Disertai mual hebat, feses berwarna gelap pekat, atau muntah terus menerus</span><span class="bg-red-600 text-white px-2.5 py-0.5 rounded-full text-xs font-bold flex items-center gap-1 shrink-0"><span class="material-symbols-outlined text-[13px]">crisis_alert</span>Indikasi Evaluasi Cepat</span></div><p class="text-xs sm:text-sm text-red-900/90 leading-relaxed font-medium">Tanda bahaya saluran cerna bagian atas (upper GI red flags) berisiko perdarahan gastrointestinal. Membutuhkan visit medis segera.</p></div></label></form><div class="p-5 bg-surface-container-low/60 rounded-2xl mb-7 border border-outline-variant/60"><div class="flex items-center justify-between mb-2"><div class="flex items-center gap-2"><span class="material-symbols-outlined text-[#0d9488] text-[20px]">tune</span><label class="text-base font-bold text-on-surface" for="pain-slider">Skala Intensitas Keluhan / Nyeri (NRS)</label></div><div class="flex items-center gap-1.5 bg-white px-3 py-1 rounded-xl shadow-xs border border-outline-variant"><span class="text-xs text-on-surface-variant font-medium">Level:</span><span class="text-base font-bold text-[#0d9488]" id="slider-val">4</span><span class="text-xs text-on-surface-variant">/ 10</span></div></div><p class="text-xs sm:text-sm text-on-surface-variant mb-4">Geser penggeser di bawah sesuai intensitas sensasi perih, kram, atau begah yang dirasakan saat ini:</p><div class="px-1"><div class="relative mb-2.5"><div class="w-full h-2.5 rounded-full bg-gradient-to-r from-emerald-500 via-amber-400 to-red-500 opacity-80"></div><input class="w-full accent-[#0d9488] h-2.5 absolute inset-0 opacity-80 cursor-pointer" id="pain-slider" max="10" min="1" oninput="document.getElementById('slider-val').innerText = this.value; updatePainLabel(this.value)" type="range" value="4"></div><div class="flex justify-between items-center text-xs font-medium text-on-surface-variant"><span class="flex items-center gap-1 text-[#059669] font-semibold"><span class="w-2 h-2 rounded-full bg-emerald-500"></span> 1 (Ringan Sekali)</span><span class="text-amber-600 font-semibold">5 (Mengganggu Aktivitas)</span><span class="flex items-center gap-1 text-red-600 font-bold">10 (Sangat Hebat) <span class="w-2 h-2 rounded-full bg-red-600"></span></span></div></div><div class="mt-4 py-2.5 px-3.5 bg-white rounded-xl flex items-center gap-2 text-on-surface-variant text-xs sm:text-sm border border-outline-variant/60 shadow-xs" id="slider-note"><span class="material-symbols-outlined text-[17px] text-[#0d9488]">info</span><span class="">Intensitas 4: Sensasi tidak nyaman terasa jelas, namun Anda masih mampu berkomunikasi dan beraktivitas normal.</span></div></div><div class="flex flex-col-reverse sm:flex-row items-center justify-between gap-4 pt-2 border-t border-outline-variant/40"><button class="w-full sm:w-auto flex items-center justify-center gap-2 px-4 py-2.5 rounded-xl text-sm font-semibold text-on-surface-variant hover:text-on-surface hover:bg-surface-container-low transition-all" type="button"><span class="material-symbols-outlined text-[18px]">arrow_back</span><span class="">Kembali ke Langkah 2</span></button><div class="flex w-full sm:w-auto items-center gap-3"><button class="hidden sm:inline-flex items-center gap-1.5 px-4 py-2.5 rounded-xl text-sm font-semibold text-on-surface-variant hover:bg-surface-container-low border border-outline-variant transition-all" type="button"><span class="material-symbols-outlined text-[18px]">bookmark_border</span><span class="">Simpan Sesi</span></button><button class="w-full sm:w-auto flex items-center justify-center gap-2 bg-[#0d9488] hover:bg-[#0f766e] text-white px-6 py-2.5 rounded-xl text-sm font-bold shadow-sm hover:shadow transition-all active:scale-95" type="button"><span class="">Lanjutkan Langkah 4</span><span class="material-symbols-outlined text-[18px]">arrow_forward</span></button></div></div></div>
+<!-- Medical Footnote Card -->
+<div class="bg-surface-container-low rounded-2xl p-4 sm:p-5 flex items-start gap-3 border border-outline-variant/60">
+<div class="w-9 h-9 rounded-xl bg-teal-100 text-[#0d9488] flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-[20px]">verified</span>
+</div>
+<p class="text-xs sm:text-sm text-on-surface-variant leading-relaxed">
+              Metrik algoritma divalidasi oleh tim medis Poliklinik Kampus ITERA merujuk pada Pedoman Nasional Pelayanan Kedokteran (PNPK) Tata Laksana Gastroesophageal Reflux Disease &amp; Dispepsia Kemenkes RI.
+            </p>
+</div>
+</section>
+<!-- Right Column: Live Triage Sidebar & Educational Resources -->
+<aside class="lg:col-span-4 flex flex-col gap-6">
+<!-- Real-Time Triage Card -->
+<div class="bg-surface-container-lowest rounded-2xl p-5 md:p-6 shadow-xs border border-outline-variant/60"><div class="flex items-center justify-between pb-3.5 mb-4 border-b border-outline-variant/50"><div class="flex items-center gap-2"><div class="w-8 h-8 rounded-lg bg-teal-50 text-[#0d9488] flex items-center justify-center"><span class="material-symbols-outlined text-[19px]">vital_signs</span></div><h4 class="text-base font-bold text-on-surface">Pratinjau Triase</h4></div><span class="text-[11px] bg-teal-50 text-[#0d9488] px-2.5 py-0.5 rounded-full font-bold uppercase tracking-wider border border-teal-100">Real-time</span></div><div class="bg-gradient-to-br from-emerald-50 to-teal-50 p-4 rounded-xl mb-4 border border-emerald-200/80 transition-all" id="triage-badge-container"><div class="flex items-center gap-2 mb-1.5"><span class="material-symbols-outlined text-[20px] text-[#059669]" id="triage-icon">check_circle</span><span class="text-sm font-bold text-[#059669]" id="triage-title">Potensi Urgensi Ringan-Sedang</span></div><p class="text-xs text-on-surface-variant leading-relaxed" id="triage-desc">Observasi mandiri 24â€“48 jam disarankan. Hidrasi teratur, konsumsi makanan lunak, dan hindari makanan pemicu keasaman.</p></div><div class="space-y-2 mb-4"><span class="text-[11px] uppercase tracking-wider text-on-surface-variant font-bold block">Parameter Terdeteksi</span><div class="flex items-center justify-between py-2 px-3 bg-surface-container-low rounded-lg text-xs"><span class="text-on-surface-variant font-medium">Durasi Keluhan</span><span class="font-bold text-[#0d9488]" id="summary-duration">&lt; 24 Jam Akut</span></div><div class="flex items-center justify-between py-2 px-3 bg-surface-container-low rounded-lg text-xs"><span class="text-on-surface-variant font-medium">Tingkat Nyeri</span><span class="font-bold text-[#0d9488]" id="summary-pain">Skala 4 (Sedang)</span></div><div class="flex items-center justify-between py-2 px-3 bg-surface-container-low rounded-lg text-xs"><span class="text-on-surface-variant font-medium">Red Flags GI</span><span class="font-bold text-[#059669]" id="summary-redflags">Tidak Terdeteksi</span></div></div><div class="mb-5 bg-surface-container-low p-3.5 rounded-xl border border-outline-variant/40"><div class="flex justify-between items-center mb-2 text-xs"><span class="text-on-surface-variant font-medium">Skor Probabilitas Observasi Mandiri</span><span class="font-bold text-[#0d9488] text-sm">78%</span></div><div class="w-full bg-surface-container h-2.5 rounded-full overflow-hidden flex"><div class="bg-gradient-to-r from-emerald-500 to-[#0d9488] h-full w-[78%]"></div><div class="bg-sky-500 h-full w-[17%]"></div><div class="bg-red-500 h-full w-[5%]"></div></div><div class="flex justify-between mt-2 text-[11px] font-semibold text-on-surface-variant"><span class="">Mandiri (78%)</span><span class="">Faskes (17%)</span><span class="">IGD (5%)</span></div></div><a class="w-full flex items-center justify-center gap-2 bg-[#dc2626] hover:bg-[#b91c1c] text-white px-4 py-2.5 rounded-xl text-sm font-bold shadow-sm transition-all active:scale-95" href="tel:119"><span class="material-symbols-outlined text-[18px] animate-pulse">call</span><span class="">Panggil Hotline Darurat 119</span></a></div>
+<!-- Educational Articles -->
+<div class="bg-surface-container-lowest rounded-2xl p-5 md:p-6 shadow-xs border border-outline-variant/60">
+<div class="flex items-center gap-2 pb-3 mb-4 border-b border-outline-variant/50">
+<div class="w-8 h-8 rounded-lg bg-teal-50 text-[#0d9488] flex items-center justify-center">
+<span class="material-symbols-outlined text-[19px]">auto_stories</span>
+</div>
+<h4 class="text-base font-bold text-on-surface">Edukasi Terkait</h4>
+</div>
+<div class="space-y-3">
+<article class="flex gap-3 group cursor-pointer p-2 rounded-xl hover:bg-surface-container-low transition-colors">
+<img alt="Dispepsia panduan" class="w-16 h-16 rounded-xl object-cover shrink-0 shadow-xs" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCPwRUec_UXaGpc0lQ4YcZoNVrhVcWycQ8keD2W7vociaWeEbzIorixrqH0L3pRHYF_vEKdjrn2pF4IAJIuFV2xGaW8RxiEiIajBmFpYQyFsIVLnS6sNxdw_vnlTPVOtYNcuc141sANrjX3YlI7aVzVEiaXC9g5bh8ESOEIHw2b9aJZhtRcLxB_xNgrj9k_0FVmBeIEUHtow2PT4JK0_RZQxaDfFgUxZgnYaMM6IdwhC6iK4DqqNR-CRw">
+<div class="flex-1 min-w-0">
+<div class="flex items-center gap-1 mb-0.5">
+<span class="bg-teal-50 text-[#0d9488] text-[10px] px-1.5 py-0.5 rounded font-bold">Panduan P3K</span>
+<span class="text-on-surface-variant text-[10px]">â€¢ 4 mnt baca</span>
+</div>
+<h5 class="text-xs font-bold text-on-surface group-hover:text-[#0d9488] transition-colors line-clamp-2 leading-snug">Pertolongan Awal Dispepsia &amp; Maag</h5>
+<p class="text-[11px] text-on-surface-variant line-clamp-1 mt-0.5">Langkah praktis penanganan asam lambung naik di lingkungan asrama/kampus.</p>
+</div>
+</article>
+<article class="flex gap-3 group cursor-pointer p-2 rounded-xl hover:bg-surface-container-low transition-colors">
+<img alt="Maag vs GERD" class="w-16 h-16 rounded-xl object-cover shrink-0 shadow-xs" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDTz7ulZ4hNsHOo0bZUIYcVVZBRqLOHreVUETpDYrlhKIzloOslPgZz_JnEx3PYTLDH4tjkDuwRgWoBeC3Uzk7bSrs_B7WgZ9AFdzwjwZc4Rn0mLj131f4mFaWN9OsCzMbJOLkzG9nXpo9k6yFMhj6zB-2-INspgy63lve4fUdcM26TTLEd2PShD8IuROklAOWSSbt_AD46wgbXLU0FHjU0fCYYAzEtD27WupzNv1h0wu8f2kRhTD3qAA">
+<div class="flex-1 min-w-0">
+<div class="flex items-center gap-1 mb-0.5">
+<span class="bg-sky-50 text-sky-700 text-[10px] px-1.5 py-0.5 rounded font-bold">Perbandingan</span>
+<span class="text-on-surface-variant text-[10px]">â€¢ 6 mnt baca</span>
+</div>
+<h5 class="text-xs font-bold text-on-surface group-hover:text-[#0d9488] transition-colors line-clamp-2 leading-snug">Perbedaan Maag Akut vs GERD Kronis</h5>
+<p class="text-[11px] text-on-surface-variant line-clamp-1 mt-0.5">Memahami heartburn, sensasi terbakar di dada, dan indikasi endoskopi.</p>
+</div>
+</article>
+</div>
+<a class="mt-4 block text-center py-2 bg-surface-container-low hover:bg-surface-container rounded-xl text-xs font-bold text-[#0d9488] transition-all" data-path="ensiklopedia" href="#">
+              Jelajahi Direktori Ensiklopedia Medis â†’
+            </a>
+</div>
+<!-- Campus Clinic Info Micro-Card -->
+<div class="bg-surface-container-low rounded-2xl p-4 border border-outline-variant/60">
+<div class="flex items-start gap-2.5">
+<span class="material-symbols-outlined text-[#0284c7] text-[20px] shrink-0 mt-0.5">health_and_safety</span>
+<div>
+<h5 class="text-xs font-bold text-on-surface">Klinik Pratama ITERA</h5>
+<p class="text-xs text-on-surface-variant mt-0.5 leading-relaxed">
+                  Buka Seninâ€“Jumat 08.00â€“16.00 WIB di Gedung Layanan Umum ITERA. Melayani pemeriksaan dokter umum dan rujukan BPJS.
+                </p>
+</div>
+</div>
+</div>
+</aside>
+</div>
+</div>
+</div>
+</main>
+<!-- Footer -->
+<footer class="w-full bg-surface-container-lowest border-t border-outline-variant/60">
+<div class="max-w-[1240px] mx-auto px-4 lg:px-6 pt-10 pb-8">
+<!-- PRD Medical Disclaimer -->
+<div class="p-6 bg-surface-container-low rounded-2xl mb-10 flex flex-col md:flex-row items-start md:items-center gap-4 justify-between border border-outline-variant/50">
+<div class="flex items-start gap-3.5">
+<div class="p-2 bg-teal-100/80 rounded-xl text-[#0d9488] flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-[24px]">verified_user</span>
+</div>
+<div>
+<h4 class="text-base font-bold text-on-surface">Medical Disclaimer (PRD Standar Medis)</h4>
+<p class="text-xs sm:text-sm text-on-surface-variant mt-1 max-w-3xl leading-relaxed">
+            Informasi dalam SehatPedia dipublikasikan untuk literasi edukasi kesehatan civitas akademika ITERA dan masyarakat. Seluruh konten, kalkulator presisi, maupun asisten AI bukan merupakan pengganti diagnosis medis, pemeriksaan fisik, atau saran resep dokter spesialis langsung.
+          </p>
+</div>
+</div>
+<div class="flex flex-col sm:flex-row gap-2.5 shrink-0 w-full md:w-auto">
+<a class="flex items-center justify-center gap-1.5 bg-[#dc2626] text-white px-4 py-2 rounded-xl text-xs font-bold shadow-xs hover:bg-red-700 transition-colors" href="tel:119">
+<span class="material-symbols-outlined text-[17px]">call</span>
+<span class="">119 Ambulans</span>
+</a>
+<a class="flex items-center justify-center gap-1.5 bg-sky-100 text-sky-800 px-4 py-2 rounded-xl text-xs font-bold hover:bg-sky-200 transition-colors" href="tel:07218030188">
+<span class="material-symbols-outlined text-[17px]">local_hospital</span>
+<span class="">Klinik ITERA</span>
+</a>
+</div>
+</div>
+<!-- Main Footer Directory Links -->
+<div class="grid grid-cols-1 md:grid-cols-4 gap-8 mb-10">
+<div class="md:col-span-1">
+<div class="flex items-center gap-2 mb-3">
+<img alt="SehatPedia Logo" class="h-7 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/AEtjO1XrPpf46kQg_YHxDDVHsnKKVvn0_kKKwki4gTQpWHm77lIc9yPFrF4j6dlLYY17aKbR8zvYj4WNR81VdbInib4wECn5-TKbctH7yhnGRXOdoy4LFO9xbRXYxgZFLDwyiq6uFVuxpcW1HgVigfU3B_w3DlNtqm6lC7HEcnLophqiUlaZuHwC7B4_wPM5oDm-4p3fuFCVDQ_UjgIfPIvHhNJW-UTS8fb7b9T2m6TprqtjbBVyQBxkvpmEnW8">
+<span class="text-lg text-[#0d9488] font-bold">SehatPedia</span>
+</div>
+<p class="text-xs sm:text-sm text-on-surface-variant mb-4 leading-relaxed">
+          Portal Literasi Kesehatan Terintegrasi &amp; Alat Bantu Keputusan Mandiri Berbasis Bukti Ilmiah Institut Teknologi Sumatera (ITERA).
+        </p>
+<div class="flex items-start gap-1.5 text-xs text-on-surface-variant">
+<span class="material-symbols-outlined text-[16px] text-[#0d9488] shrink-0">location_on</span>
+<span class="">Jl. Terusan Ryacudu, Way Hui, Jati Agung, Lampung Selatan 35365</span>
+</div>
+</div>
+<div>
+<h5 class="text-sm font-bold text-on-surface mb-3">Navigasi Interaktif</h5>
+<ul class="space-y-2 text-xs sm:text-sm text-on-surface-variant">
+<li class=""><a class="hover:text-[#0d9488] transition-colors" data-path="beranda" href="#">Beranda Utama</a></li>
+<li class=""><a class="hover:text-[#0d9488] transition-colors" data-path="ensiklopedia" href="#">Ensiklopedia Literasi &amp; P3K</a></li>
+<li class=""><a class="hover:text-[#0d9488] transition-colors" data-path="kalkulator-medis" href="#">Kalkulator Presisi Medis</a></li>
+<li class=""><a class="hover:text-[#0d9488] transition-colors" data-path="cek-gejala" href="#">Symptom Checker Interaktif</a></li>
+<li class=""><a class="hover:text-[#0d9488] transition-colors" data-path="tanya-ai" href="#">TanyaSehat AI Terkontrol</a></li>
+</ul>
+</div>
+<div>
+<h5 class="text-sm font-bold text-on-surface mb-3">Rujukan &amp; Bantuan</h5>
+<ul class="space-y-2 text-xs sm:text-sm text-on-surface-variant">
+<li class=""><a class="hover:text-[#0d9488] transition-colors" href="#">Panduan Tanggap Bencana &amp; P3K</a></li>
+<li class=""><a class="hover:text-[#0d9488] transition-colors" href="#">Direktori Faskes &amp; RS Terdekat</a></li>
+<li class=""><a class="hover:text-[#0d9488] transition-colors" href="#">Konsultasi Tim Medis Kampus</a></li>
+<li class=""><a class="hover:text-[#0d9488] transition-colors" href="#">Jadwal Dokter Poliklinik</a></li>
+<li class=""><a class="hover:text-[#0d9488] transition-colors" href="#">SOP Rujukan Mahasiswa</a></li>
+</ul>
+</div>
+<div>
+<h5 class="text-sm font-bold text-on-surface mb-3">Mitra &amp; Sertifikasi</h5>
+<p class="text-xs sm:text-sm text-on-surface-variant mb-3 leading-relaxed">
+          Dikembangkan di bawah koordinasi Unit Layanan Kesehatan Kampus ITERA berkolaborasi dengan standar Kemenkes RI.
+        </p>
+<div class="flex flex-wrap gap-1.5">
+<span class="bg-surface-container-low text-on-surface text-[11px] px-2 py-1 rounded-md border border-outline-variant/60">Puskesmas Way Hui</span>
+<span class="bg-surface-container-low text-on-surface text-[11px] px-2 py-1 rounded-md border border-outline-variant/60">RSUD Dr. H. Abdul Moeloek</span>
+<span class="bg-surface-container-low text-on-surface text-[11px] px-2 py-1 rounded-md border border-outline-variant/60">Kemenkes RI</span>
+</div>
+</div>
+</div>
+<!-- Bottom Copyright -->
+<div class="pt-6 border-t border-outline-variant/50 flex flex-col sm:flex-row items-center justify-between text-xs text-on-surface-variant gap-3">
+<p class="">Â© 2025 SehatPedia ITERA. Hak Cipta Dilindungi Undang-Undang.</p>
+<div class="flex gap-4">
+<a class="hover:text-[#0d9488] transition-colors" href="#">Kebijakan Privasi Medis</a>
+<a class="hover:text-[#0d9488] transition-colors" href="#">Syarat Penggunaan</a>
+<a class="hover:text-[#0d9488] transition-colors" href="#">Akurasi Algoritma</a>
+</div>
+</div>
+</div>
+</footer>
+<script>
+  function updatePainLabel(val) {
+    var note = document.getElementById('slider-note');
+    var summaryPain = document.getElementById('summary-pain');
+    if (!note || !summaryPain) return;
+    
+    val = parseInt(val, 10);
+    summaryPain.innerText = 'Skala ' + val + (val <= 3 ? ' (Ringan)' : val <= 6 ? ' (Sedang)' : ' (Berat)');
+    
+    if (val <= 3) {
+      note.innerHTML = '<span class="material-symbols-outlined text-[17px] text-[#059669]">sentiment_satisfied</span><span>Intensitas 1-3: Keluhan ringan, tidak mengganggu konsentrasi belajar maupun pekerjaan harian.</span>';
+    } else if (val <= 6) {
+      note.innerHTML = '<span class="material-symbols-outlined text-[17px] text-[#0d9488]">info</span><span>Intensitas 4-6: Sensasi tidak nyaman terasa jelas, namun Anda masih mampu berkomunikasi dan beraktivitas normal.</span>';
+    } else if (val <= 8) {
+      note.innerHTML = '<span class="material-symbols-outlined text-[17px] text-amber-600">warning</span><span>Intensitas 7-8: Rasa nyeri signifikan. Membutuhkan istirahat tirah baring dan penanganan terarah.</span>';
+    } else {
+      note.innerHTML = '<span class="material-symbols-outlined text-[17px] text-red-600">crisis_alert</span><span>Intensitas 9-10: Nyeri ekstrem tak tertahankan. Segera cari pertolongan medis faskes terdekat.</span>';
+    }
+  }
+
+  function updateTriageEstimate(state) {
+    var box = document.getElementById('triage-badge-container');
+    var icon = document.getElementById('triage-icon');
+    var title = document.getElementById('triage-title');
+    var desc = document.getElementById('triage-desc');
+    var sumDuration = document.getElementById('summary-duration');
+    var sumRedflags = document.getElementById('summary-redflags');
+
+    if (!box || !icon || !title || !desc) return;
+
+    if (state === 'mild') {
+      box.className = 'bg-gradient-to-br from-emerald-50 to-teal-50 p-4 rounded-xl mb-4 border border-emerald-200/80 transition-all';
+      icon.className = 'material-symbols-outlined text-[20px] text-[#059669]';
+      icon.innerText = 'check_circle';
+      title.className = 'text-sm font-bold text-[#059669]';
+      title.innerText = 'Potensi Urgensi Ringan-Sedang';
+      desc.innerText = 'Observasi mandiri 24â€“48 jam disarankan. Hidrasi teratur, konsumsi makanan lunak, dan hindari makanan pemicu keasaman.';
+      if (sumDuration) sumDuration.innerText = '< 24 Jam Akut';
+      if (sumRedflags) {
+        sumRedflags.innerText = 'Tidak Terdeteksi';
+        sumRedflags.className = 'font-bold text-[#059669]';
+      }
+    } else if (state === 'moderate') {
+      box.className = 'bg-sky-50 p-4 rounded-xl mb-4 border border-sky-200 transition-all';
+      icon.className = 'material-symbols-outlined text-[20px] text-sky-700';
+      icon.innerText = 'schedule';
+      title.className = 'text-sm font-bold text-sky-700';
+      title.innerText = 'Observasi Berlanjut (Subakut)';
+      desc.innerText = 'Keluhan hilang-timbul hingga 1 minggu. Pertimbangkan konsultasi dokter jika gejala tidak mereda dalam 3 hari ke depan.';
+      if (sumDuration) sumDuration.innerText = '2 - 7 Hari';
+      if (sumRedflags) {
+        sumRedflags.innerText = 'Minimal';
+        sumRedflags.className = 'font-bold text-sky-700';
+      }
+    } else if (state === 'attention') {
+      box.className = 'bg-slate-100 p-4 rounded-xl mb-4 border border-slate-300 transition-all';
+      icon.className = 'material-symbols-outlined text-[20px] text-slate-800';
+      icon.innerText = 'stethoscope';
+      title.className = 'text-sm font-bold text-slate-800';
+      title.innerText = 'Rekomendasi Konsultasi Klinis';
+      desc.innerText = 'Gejala kronis resisten terhadap antasida konvensional. Dianjurkan membuat janji pemeriksaan tatap muka di Poliklinik ITERA.';
+      if (sumDuration) sumDuration.innerText = '> 2 Minggu';
+      if (sumRedflags) {
+        sumRedflags.innerText = 'Dispepsia Resisten';
+        sumRedflags.className = 'font-bold text-slate-800';
+      }
+    } else if (state === 'urgent') {
+      box.className = 'bg-red-50 p-4 rounded-xl mb-4 border border-red-300 transition-all';
+      icon.className = 'material-symbols-outlined text-[20px] text-red-600';
+      icon.innerText = 'crisis_alert';
+      title.className = 'text-sm font-bold text-red-600';
+      title.innerText = 'Indikasi Evaluasi Cepat / IGD';
+      desc.innerText = 'Peringatan: Terdapat tanda bahaya saluran pencernaan atas. Hindari penundaan pengobatan, segera datangi fasilitas darurat!';
+      if (sumDuration) sumDuration.innerText = 'Akut Berbahaya';
+      if (sumRedflags) {
+        sumRedflags.innerText = 'âš ï¸ TERDETEKSI RED FLAG';
+        sumRedflags.className = 'font-bold text-red-600';
+      }
+    }
+  }
+</script>
+
+
+</body></html>
