@@ -1,6 +1,6 @@
 # SehatPedia Health Platform
 
-Kelima halaman SehatPedia kini dijalankan oleh satu server dan satu port, tanpa mengubah berkas `code.html` asli.
+Kelima halaman SehatPedia kini dijalankan oleh satu server dan satu port. Server juga menyajikan satu konfigurasi Tailwind bersama agar komponen header yang sama dirender konsisten pada semua halaman.
 
 Jalankan dari folder ini:
 

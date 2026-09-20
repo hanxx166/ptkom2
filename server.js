@@ -5,6 +5,19 @@ const path = require('node:path');
 const port = Number(process.env.PORT) || 3000;
 const root = __dirname;
 
+// All exported pages use Tailwind's browser runtime. Keep the theme tokens in
+// one place so the repeated fixed header is rendered with the same utilities
+// on every route.
+const canonicalPage = path.join(root, 'ensiklopedia', 'code.html');
+const canonicalHtml = fs.readFileSync(canonicalPage, 'utf8');
+const sharedTailwindConfig = canonicalHtml.match(
+  /<script id="tailwind-config">\s*([\s\S]*?)\s*<\/script>/
+);
+
+if (!sharedTailwindConfig) {
+  throw new Error('Konfigurasi Tailwind bersama tidak ditemukan.');
+}
+
 // The original pages remain untouched.  This map gives each one a stable URL
 // while they are all served by the same Node process (and therefore one port).
 const pages = {
@@ -38,6 +51,21 @@ const navigationBridge = `
   })();
 </script>`;
 
+const pageTailwindConfig = /<script id="tailwind-config">[\s\S]*?<\/script>/;
+const tailwindRuntime = /<script src="https:\/\/cdn\.tailwindcss\.com\?plugins=forms,container-queries"><\/script>/;
+
+function normalizeSharedUiAssets(html) {
+  // Remove page-local configurations, then load the canonical configuration
+  // before Tailwind. This also supplies the missing configuration in the
+  // Cek Gejala and Tanya AI exports.
+  return html
+    .replace(pageTailwindConfig, '')
+    .replace(
+      tailwindRuntime,
+      '<script src="/shared-tailwind-config.js"></script>\n    $&'
+    );
+}
+
 function sendHtml(response, file) {
   fs.readFile(path.join(root, file), 'utf8', (error, html) => {
     if (error) {
@@ -46,6 +74,7 @@ function sendHtml(response, file) {
       return;
     }
 
+    html = normalizeSharedUiAssets(html);
     response.writeHead(200, { 'Content-Type': 'text/html; charset=utf-8' });
     response.end(html.replace('</body>', `${navigationBridge}</body>`));
   });
@@ -53,6 +82,12 @@ function sendHtml(response, file) {
 
 const server = http.createServer((request, response) => {
   const pathname = new URL(request.url, `http://${request.headers.host}`).pathname;
+
+  if (pathname === '/shared-tailwind-config.js') {
+    response.writeHead(200, { 'Content-Type': 'application/javascript; charset=utf-8' });
+    response.end(sharedTailwindConfig[1]);
+    return;
+  }
 
   if (pathname === '/') {
     response.writeHead(302, { Location: '/beranda' });
