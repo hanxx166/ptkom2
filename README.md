@@ -1,7 +1,7 @@
 # SehatPedia Health Platform
 
-Kelima halaman SehatPedia kini dijalankan oleh satu server dan satu port. Server juga menyajikan satu konfigurasi Tailwind bersama agar komponen header yang sama dirender konsisten pada semua halaman.
-
+=======
+>>>>>>> de01b93439fde89e7df4887efe4082d172cdef1b
 Jalankan dari folder ini:
 
 ```powershell
