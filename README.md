@@ -1,7 +1,5 @@
 # SehatPedia Health Platform
 
-Kelima halaman SehatPedia kini dijalankan oleh satu server dan satu port, tanpa mengubah berkas `code.html` asli.
-
 Jalankan dari folder ini:
 
 ```powershell
