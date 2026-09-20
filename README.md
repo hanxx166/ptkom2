@@ -1,7 +1,5 @@
 # SehatPedia Health Platform
 
-=======
->>>>>>> de01b93439fde89e7df4887efe4082d172cdef1b
 Jalankan dari folder ini:
 
 ```powershell
